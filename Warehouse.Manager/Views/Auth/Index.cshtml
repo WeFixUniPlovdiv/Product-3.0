@@ -1,0 +1,145 @@
+﻿@model Warehouse.Manager.Models.AuthVM
+@{
+    ViewData["Title"] = "Влизане";
+    Layout = null;
+}
+<style>
+    .nav-link {
+        color: white;
+    }
+
+    .nav-link:hover {
+        color: white;
+    }
+</style>
+<script type="text/javascript">
+    this.onload = function () {
+        let selected = "@Model.selected"
+        switch (selected) {
+            case "login": {
+                document.getElementById("nav-Login-tab").ariaSelected = true;
+                document.getElementById("nav-Login-tab").classList.add("active");
+                document.getElementById("nav-Login").classList.add("show", "active");
+            }
+                break;
+            case "register": {
+                document.getElementById("nav-register-tab").ariaSelected = true;
+                document.getElementById("nav-register-tab").classList.add("active");
+                document.getElementById("nav-register").classList.add("show", "active");
+            }
+                break;
+        }
+    }
+</script>
+<div class="container">
+    <div class="row align-items-center" style="height:inherit">
+        <div class="col-md-3"></div>
+        <div class="col-sm-12 col-md-4 align-self-center col-xl-6 g-4 p-5 ">
+            <div class="card mask p-4">
+                <div class="text-center text-light">
+                    <h2 class="card-title">Склад 2.0</h2>
+                    <p class="card-text">Модерното решение за оправление на съвременните складове!</p>
+                </div>
+                <nav class="pt-3">
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <button class="nav-link" id="nav-Login-tab" data-bs-toggle="tab" data-bs-target="#nav-Login"
+                                type="button" role="tab" aria-controls="nav-Login" aria-selected="false">
+                            Влизане
+                        </button>
+                        <button class="nav-link" id="nav-register-tab" data-bs-toggle="tab" data-bs-target="#nav-register"
+                                type="button" role="tab" aria-controls="nav-register" aria-selected="false">
+                            Регисрация
+                        </button>
+                    </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+
+                    <div class="tab-pane fade p-3 bg-white" id="nav-Login" role="tabpanel"
+                         aria-labelledby="nav-Login-tab">
+                        <form asp-action="Login" class="row g-3">
+                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                            @if (!string.IsNullOrEmpty(ViewBag.LoginError))
+                            {
+                                <div class="alert alert-danger" role="alert">@ViewBag.LoginError</div>
+                            }
+                            @Html.HiddenFor(x => x.Login.ReturnUrl)
+                            <div class="form-floating">
+                                <input type="text" asp-for="Login.Username" class="form-control" placeholder="example@exmple.com" />
+                                <label asp-for="Login.Username"></label>
+                                <span asp-validation-for="Login.Username" class="text-danger"></span>
+                            </div>
+                            <div class="form-floating">
+                                <input asp-for="Login.Password" class="form-control" placeholder="Password" />
+                                <label asp-for="Login.Password"></label>
+                                <span asp-validation-for="Login.Password" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <div class="checkbox">
+                                    <label>
+                                        <input asp-for="Login.RememberLogin" /> @Html.DisplayNameFor(model => model.Login.RememberLogin)
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group pt-3">
+                                <button type="submit" value="@Model.Login" class="btn btn-primary" style="width:inherit">Влизане</button>
+                            </div>
+                            <div class="form-group">
+                                <a asp-action="">Забравена парола</a>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="tab-pane fade p-3 bg-white" id="nav-register" role="tabpanel" aria-labelledby="nav-register-tab">
+                        <form asp-action="Register" class="row g-3">
+                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                            @if (!string.IsNullOrEmpty(ViewBag.RegisterError))
+                            {
+                                <div class="alert alert-danger" role="alert">@ViewBag.RegisterError</div>
+                            }
+                            <div class="form-floating">
+                                <input asp-for="User.EmailAddress" class="form-control" placeholder="EmailAddress" />
+                                <label asp-for="User.EmailAddress"></label>
+                                <span asp-validation-for="User.EmailAddress" class="text-danger"></span>
+                            </div>
+                            <div class="form-floating">
+                                <input asp-for="User.Username" class="form-control" placeholder="Username" />
+                                <label asp-for="User.Username"></label>
+                                <span asp-validation-for="User.Username" class="text-danger"></span>
+                            </div>
+                            <p class="text-muted my-0" style="font-size:small">
+                                ▪ малки и големи латински букви и "_" <br />
+                                ▪ между 5 и 15 символа
+                            </p>
+                            <div class="form-floating">
+                                <input asp-for="User.Password" class="form-control" placeholder="Password" />
+                                <label asp-for="User.Password"></label>
+                                <span asp-validation-for="User.Password" class="text-danger"></span>
+                            </div>
+                            <p class="text-muted my-0" style="font-size:smaller">
+                                ▪ 1 малка и 1 голяма латинска буква <br />
+                                ▪ един специален символ "@@, -, _, ~, |" <br />
+                                ▪ между 6 и 20 символа
+                            </p>
+                            <div class="form-floating">
+                                <input asp-for="User.PasswordMatch" class="form-control" placeholder="PasswordMatch" />
+                                <label asp-for="User.PasswordMatch"></label>
+                                <span asp-validation-for="User.PasswordMatch" class="text-danger"></span>
+                            </div>
+                            <div class="form-floating">
+                                <input asp-for="User.Phone" class="form-control" placeholder="Phone" />
+                                <label asp-for="User.Phone"></label>
+                                <span asp-validation-for="User.Phone" class="text-danger"></span>
+                            </div>
+                            <div class="form-group pt-3">
+                                <button type="submit" value="@Model.User" class="btn btn-success" style="width:inherit">Регистриране</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <a href="http://fmi-plovdiv.org/" target="_blank"><img class="card-img-bottom" src="~/img/header_bg.png" /></a>
+            </div>
+
+
+        </div>
+    </div>
+</div>

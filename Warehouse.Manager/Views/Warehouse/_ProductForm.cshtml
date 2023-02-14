@@ -1,0 +1,77 @@
+﻿@model ProductModalVM
+<div class="modal-body">
+    <div class="container-fluid">
+        <div class="row g-3 d-flex justify-content-around">
+            <div class="col col-md-6 mb-3">
+                <input type="number" hidden asp-for="Product.pID" />
+                <div class="input-group">
+                    <span class="input-group-text" id="add-name">@Html.DisplayNameFor(model => model.Product.pName)</span>
+                    <input type="text" class="form-control" asp-for="Product.pName" aria-describedby="add-name" required />
+                </div>
+            </div>
+            <div class="col col-md-6  mb-3">
+                <div class="input-group">
+
+                    <span class="input-group-text" for="add-cat">@Html.DisplayNameFor(model => model.Product.pType)</span>
+                    <select class="form-select" id="add-cat" asp-for="Product.pType">
+                        @foreach (var type in Model.ProductTypes)
+                        {
+                            string sel = string.Empty;
+                            if (type.ID.ToString().Equals(Model.Product.pType))
+                                sel = "selected";
+                            <option value="@type.ID" sel>@type.Name</option>
+                        }
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="row g-3 d-flex justify-content-around">
+            <div class="col col-md-12">
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="add-desc">@Html.DisplayNameFor(model => model.Product.pDesc)*</span>
+                    <textarea type="text" class="form-control" asp-for="Product.pDesc" aria-describedby="add-desc"></textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="row g-3 d-flex justify-content-around">
+            <div class="col col-md-6 mb-3">
+                <div class="input-group">
+                    <span class="input-group-text" id="add-bprice">@Html.DisplayNameFor(model => model.Product.pBPrice)</span>
+                    <input type="number" step="0.01" min="0.01" max="999999999.00" class="form-control" asp-for="Product.pBPrice" aria-describedby="add-bprice" required />
+                </div>
+            </div>
+            <div class="col col-md-6  mb-3">
+                <div class="input-group">
+                    <span class="input-group-text" id="add-sprice">@Html.DisplayNameFor(model => model.Product.pSPrice)</span>
+                    <input type="number" step="0.01" min="0.01" max="999999999.00" class="form-control" asp-for="Product.pSPrice" aria-describedby="add-sprice" required />
+                </div>
+            </div>
+        </div>
+        <div class="row g-3 d-flex justify-content-around">
+            <div class="col col-md-6 mb-3">
+                <div class="input-group">
+                    <span class="input-group-text" id="add-amount">@Html.DisplayNameFor(model => model.Product.pAmount)</span>
+                    <input type="number" class="form-control" asp-for="Product.pAmount" aria-describedby="add-amount" required />
+                </div>
+            </div>
+            <div class="col col-md-6 mb-3">
+                <div class="input-group">
+                    <input type="file" class="form-control" id="get-file" oninput="convertBase64" aria-describedby="add-image-clear" accept="image/*" />
+                    <button type="button" class="btn btn-outline-secondary" id="add-image-clear" onclick="clearFileInput"><i class="bi bi-x"></i></button>
+                    <input type="text" asp-for="Product.ImageBase64" id="set-b64" hidden />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-md-center">
+        <div class="col col-md-auto" style="display:none" id="img-preview-div">
+            <img id="img-preview" class="img-fluid" src="data:image;base64,@System.Convert.ToBase64String(Model.Product.pImg)" />
+        </div>
+    </div>
+</div>
+<div class="modal-footer bg-info">
+    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Затвори</button>
+    <button type="submit" class="btn btn-success" value="@Model">Запази</button>
+</div>
+<script src="~/js/Product.js"></script>

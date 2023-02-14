@@ -1,0 +1,1996 @@
+Time: 17:26:24
+LogLevel: Error
+Code: GetProducts
+Exception: {
+  "ClientTitle": "Error",
+  "ClientMessage": "Could not establish connection.",
+  "Callback": "NONE",
+  "Handler": "NONE",
+  "Args": null,
+  "StatusCode": "GatewayTimeout",
+  "Message": "Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=15086; handshake=20; ",
+  "Data": {},
+  "InnerException": null,
+  "HelpLink": null,
+  "Source": "Warehouse.Manager",
+  "HResult": -2146233088,
+  "StackTrace": "   at Warehouse.Manager.Services.DbCommandBase.ConnectionOpen() in D:\\Shared drives\\Projects\\ServerLangs_1701261030\\Warehouse.Manager\\Services\\DbCommandBase.cs:line 71\r\n   at Warehouse.Manager.Services.DbCommandBase.GetTableResult(String stmt, List`1 parameters) in D:\\Shared drives\\Projects\\ServerLangs_1701261030\\Warehouse.Manager\\Services\\DbCommandBase.cs:line 139\r\n   at Warehouse.Manager.Services.DbCommandBase.GetListResult[T](String stmt, List`1 parameters) in D:\\Shared drives\\Projects\\ServerLangs_1701261030\\Warehouse.Manager\\Services\\DbCommandBase.cs:line 411\r\n   at Warehouse.Manager.Services.DbDataScopedService.GetProducts(Nullable`1 typeID, String name) in D:\\Shared drives\\Projects\\ServerLangs_1701261030\\Warehouse.Manager\\Services\\DbDataScopedService.cs:line 78"
+}
+Parameters: {
+  "ClientIPAddress": null
+}
+IPAddress: ::1
+Request: {
+  "Method": "GET",
+  "Url": "https://localhost:7102/",
+  "Path": "/",
+  "Query": [],
+  "Body": "",
+  "Form": null,
+  "Headers": {
+    "Accept": [
+      "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+    ],
+    "Host": [
+      "localhost:7102"
+    ],
+    "User-Agent": [
+      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+    ],
+    ":method": [
+      "GET"
+    ],
+    "Accept-Encoding": [
+      "gzip, deflate, br"
+    ],
+    "Accept-Language": [
+      "en-GB,en;q=0.9,bg-BG;q=0.8,bg;q=0.7,en-US;q=0.6"
+    ],
+    "Cookie": [
+      ".AspNetCore.Antiforgery.1L9FrIpObnY=CfDJ8Dy3GDioeC5Iv8GnbSp3D-D7ltMsPm6Q9Qe3EE22OQEeH8ZcbZXV47e2cGQp-rxUAyxyV4wHw82LvMfzOsuLYvN4Vjd7oPw6c2d91khK5eUmda2lCi4ucdzfYdwet45fBl76Evu9wgL6w26z61LEdsc",
+      "active_session=CfDJ8Dy3GDioeC5Iv8GnbSp3D-BWTBqNTvDSxjY3MUS6jkGTnlVVTpSWGaT7xWhz9-zismWBiTj-PO8LwDmN5TJ5jJxlxupECMkm91XDbkF9-ZT6Y8asIe9_xOl8KTDZK-ufkXM99S3Q8z9lYDkgcvlEEvks1cn-v0rxsEZXPo_q0X4oKGPHfXbFwKyyhzcuTiHiiZ6KrAF4OqYDWf0YzJ3CSvC4ScK7v6ulONgP5zBqws1PGXeUtrgLf6daB5Eh9UKU0bAe1Eb8oY6UgyRVKemzXuB3xdg-CNqB-Qcl4vaI4jJBCBXLXIt3V6dfez9gfRqnwIxp2tJMasRNkd-wNl93SCd0dcEMtdOJ4Dgi4bH5D6xRvE97IAsOOB4ERMcsXFZe9uqG81HDt7HnQmnPY1uHYi-u6C6V8fYvZAnwwv6ggR5aW0K1YgUclVG1iUZAEzKER66X5YW8lDnqYUHel86ij7FzIa6hQ0EJSi-IF76eu_G_sIw4KlqHKGXIPLlfnEGds8VZ88fR1DOeIf6IqIikdHliT4l1xVGCoXP8kMrjnOsT"
+    ],
+    "Upgrade-Insecure-Requests": [
+      "1"
+    ],
+    "sec-ch-ua": [
+      "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\""
+    ],
+    "sec-ch-ua-mobile": [
+      "?0"
+    ],
+    "sec-ch-ua-platform": [
+      "\"Windows\""
+    ],
+    "DNT": [
+      "1"
+    ],
+    "sec-fetch-site": [
+      "none"
+    ],
+    "sec-fetch-mode": [
+      "navigate"
+    ],
+    "sec-fetch-user": [
+      "?1"
+    ],
+    "sec-fetch-dest": [
+      "document"
+    ]
+  }
+}
+-------------------------------------------------
+
+Time: 17:44:29
+LogLevel: Error
+Code: GetProducts
+Exception: {
+  "ClientTitle": "Error",
+  "ClientMessage": "Error processing data.",
+  "Callback": "NONE",
+  "Handler": "NONE",
+  "Args": null,
+  "StatusCode": "ServiceUnavailable",
+  "Message": "{\"Message\":\"A transport-level error has occurred when receiving results from the server. (provider: Session Provider, error: 19 - Physical connection is not usable)\",\"Number\":-1,\"Procedure\":null,\"LineNumber\":0}",
+  "Data": {},
+  "InnerException": null,
+  "HelpLink": null,
+  "Source": "Warehouse.Manager",
+  "HResult": -2146233088,
+  "StackTrace": "   at Warehouse.Manager.Utils.DatabaseException..ctor(SqlException sqlException)\r\n   at Warehouse.Manager.Services.DbCommandBase.<>c__DisplayClass34_0.<GetTableResult>b__0(Exception _e)\r\n   at Warehouse.Manager.Utils.ExceptionHelper.GetException(Exception e, Func`2 func)\r\n   at Warehouse.Manager.Services.DbCommandBase.GetTableResult(String stmt, List`1 parameters)\r\n   at Warehouse.Manager.Services.DbCommandBase.GetListResult[T](String stmt, List`1 parameters)\r\n   at Warehouse.Manager.Services.DbDataScopedService.GetProducts(Nullable`1 typeID, String name)"
+}
+Parameters: {
+  "ClientIPAddress": null
+}
+IPAddress: ::1
+Request: {
+  "Method": "GET",
+  "Url": "https://localhost:7102/",
+  "Path": "/",
+  "Query": [],
+  "Body": "",
+  "Form": null,
+  "Headers": {
+    "Accept": [
+      "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+    ],
+    "Host": [
+      "localhost:7102"
+    ],
+    "User-Agent": [
+      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+    ],
+    ":method": [
+      "GET"
+    ],
+    "Accept-Encoding": [
+      "gzip, deflate, br"
+    ],
+    "Accept-Language": [
+      "en-GB,en;q=0.9,bg-BG;q=0.8,bg;q=0.7,en-US;q=0.6"
+    ],
+    "Cache-Control": [
+      "max-age=0"
+    ],
+    "Cookie": [
+      ".AspNetCore.Antiforgery.1L9FrIpObnY=CfDJ8Dy3GDioeC5Iv8GnbSp3D-D7ltMsPm6Q9Qe3EE22OQEeH8ZcbZXV47e2cGQp-rxUAyxyV4wHw82LvMfzOsuLYvN4Vjd7oPw6c2d91khK5eUmda2lCi4ucdzfYdwet45fBl76Evu9wgL6w26z61LEdsc",
+      "active_session=CfDJ8Dy3GDioeC5Iv8GnbSp3D-DEbZgBb0efdO5zH90m6Ef6Q-3nGJ6CGC6PeawArbti6XBLpnoKTt0r0DVvpaJngqLG04qv9r4JVUoPhCShxbeQnir34Rxlz6Tb_mK1vTVzTj5CYVYP1UPFxg6DlKhRL2mDlFbpvXfjSFCBWeL4esp45FgObU2RVNKdL1QRyku_Q0GBTOcqdk7YS7sTS96_eI22kuUE9P1OTVNjdzVu0FakBQRHUWJo_at9uO1WAvT-PWehu_dmcnYzhYlLDOxB0A9Ec9kh5wC34ecMC-1Bcb1kKCgl0yd_kJxPQIk5e20crvxx-fGtl1rDYZXLvf--Mnr8KW8PiPt8jh5GOnRdOlZOFOJvL7MXEv5fUG-17hqGOihQ8WzSXD6n7PhQsWm4VgBcYmc1PNxaRRc3W0OlK1dDkGUFjfRR_X9QfLxdAmXdAG8zKlMR-oPZw6wHqWlD6oAVcqASQkDznma4IORQ7l1huSZWqTHI8Gztgmj6Vc-DGesEt5ES7kxDNGtT-mVss3b2drmQJ3oL_xGP8DHSN77d"
+    ],
+    "Referer": [
+      "https://localhost:7102/"
+    ],
+    "Upgrade-Insecure-Requests": [
+      "1"
+    ],
+    "sec-ch-ua": [
+      "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\""
+    ],
+    "sec-ch-ua-mobile": [
+      "?0"
+    ],
+    "sec-ch-ua-platform": [
+      "\"Windows\""
+    ],
+    "DNT": [
+      "1"
+    ],
+    "sec-fetch-site": [
+      "same-origin"
+    ],
+    "sec-fetch-mode": [
+      "navigate"
+    ],
+    "sec-fetch-dest": [
+      "document"
+    ]
+  }
+}
+-------------------------------------------------
+
+Time: 17:50:39
+LogLevel: Error
+Code: GetProducts
+Exception: {
+  "ClientTitle": "Error",
+  "ClientMessage": "Error processing data.",
+  "Callback": "NONE",
+  "Handler": "NONE",
+  "Args": null,
+  "StatusCode": "ServiceUnavailable",
+  "Message": "{\"Message\":\"A transport-level error has occurred when receiving results from the server. (provider: Session Provider, error: 19 - Physical connection is not usable)\",\"Number\":-1,\"Procedure\":null,\"LineNumber\":0}",
+  "Data": {},
+  "InnerException": null,
+  "HelpLink": null,
+  "Source": "Warehouse.Manager",
+  "HResult": -2146233088,
+  "StackTrace": "   at Warehouse.Manager.Utils.DatabaseException..ctor(SqlException sqlException)\r\n   at Warehouse.Manager.Services.DbCommandBase.<>c__DisplayClass34_0.<GetTableResult>b__0(Exception _e)\r\n   at Warehouse.Manager.Utils.ExceptionHelper.GetException(Exception e, Func`2 func)\r\n   at Warehouse.Manager.Services.DbCommandBase.GetTableResult(String stmt, List`1 parameters)\r\n   at Warehouse.Manager.Services.DbCommandBase.GetListResult[T](String stmt, List`1 parameters)\r\n   at Warehouse.Manager.Services.DbDataScopedService.GetProducts(Nullable`1 typeID, String name)"
+}
+Parameters: {
+  "ClientIPAddress": null
+}
+IPAddress: ::1
+Request: {
+  "Method": "GET",
+  "Url": "https://localhost:7102/",
+  "Path": "/",
+  "Query": [],
+  "Body": "",
+  "Form": null,
+  "Headers": {
+    "Accept": [
+      "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+    ],
+    "Host": [
+      "localhost:7102"
+    ],
+    "User-Agent": [
+      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+    ],
+    ":method": [
+      "GET"
+    ],
+    "Accept-Encoding": [
+      "gzip, deflate, br"
+    ],
+    "Accept-Language": [
+      "en-GB,en;q=0.9,bg-BG;q=0.8,bg;q=0.7,en-US;q=0.6"
+    ],
+    "Cache-Control": [
+      "max-age=0"
+    ],
+    "Cookie": [
+      ".AspNetCore.Antiforgery.1L9FrIpObnY=CfDJ8Dy3GDioeC5Iv8GnbSp3D-D7ltMsPm6Q9Qe3EE22OQEeH8ZcbZXV47e2cGQp-rxUAyxyV4wHw82LvMfzOsuLYvN4Vjd7oPw6c2d91khK5eUmda2lCi4ucdzfYdwet45fBl76Evu9wgL6w26z61LEdsc",
+      "active_session=CfDJ8Dy3GDioeC5Iv8GnbSp3D-B_McZpkMqc1_xjXozMdkhWq-8_xL1PEomlP_qIY3RieJgGpzTB_tKR2OjhSW8-aAl6ArBjHGxmwdiIDp2dFXkqQ_QOlhFx7L2yjVnUAem4vzg6anrndVQD-GE2S02lJlLif4Dm0zFZi9t9kuChDzr2E65SRNASXrKWZ373bHfr5kcDqKPO_ztNX8v286-CQZ_sc4XqJvf9tgdCk-xWzjXlEJ7_0S-wwn5_eg7FDF878M3HoE9fkDwAIEw_MaLOQu6pJwAqlpPv1nM8AH_wndGZl_ZOUCR8vkqrYy8bO6_p14xyrIhdWepg_HLLTtzneiDfKT9fhdpbdFZZTZJYiS7KwNeOxjDWZkZp65ZX4Uvq5ukmRgk4sAeNdsXEla8OXf43bELolfAtOGa_Vxe_FBUmx-ntD7QMXbVjvmQV2NcKhizdXl39aXDvezxH8EDhBrweJeeQZdt0Y2MTIp7jMi_vY5bg45o5QbzGeEBK3Nx-3FROM8roQ1rVPYKROqdLHV6yHZD7AqjucWZrUKlNkBtR"
+    ],
+    "Referer": [
+      "https://localhost:7102/"
+    ],
+    "Upgrade-Insecure-Requests": [
+      "1"
+    ],
+    "sec-ch-ua": [
+      "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\""
+    ],
+    "sec-ch-ua-mobile": [
+      "?0"
+    ],
+    "sec-ch-ua-platform": [
+      "\"Windows\""
+    ],
+    "DNT": [
+      "1"
+    ],
+    "sec-fetch-site": [
+      "same-origin"
+    ],
+    "sec-fetch-mode": [
+      "navigate"
+    ],
+    "sec-fetch-dest": [
+      "document"
+    ]
+  }
+}
+-------------------------------------------------
+
+Time: 17:50:55
+LogLevel: Error
+Code: GetProducts
+Exception: {
+  "ClientTitle": "Error",
+  "ClientMessage": "Could not establish connection.",
+  "Callback": "NONE",
+  "Handler": "NONE",
+  "Args": null,
+  "StatusCode": "GatewayTimeout",
+  "Message": "A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: TCP Provider, error: 0 - A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.)",
+  "Data": {},
+  "InnerException": null,
+  "HelpLink": null,
+  "Source": "Warehouse.Manager",
+  "HResult": -2146233088,
+  "StackTrace": "   at Warehouse.Manager.Services.DbCommandBase.ConnectionOpen()\r\n   at Warehouse.Manager.Services.DbCommandBase.GetTableResult(String stmt, List`1 parameters)\r\n   at Warehouse.Manager.Services.DbCommandBase.GetListResult[T](String stmt, List`1 parameters)\r\n   at Warehouse.Manager.Services.DbDataScopedService.GetProducts(Nullable`1 typeID, String name)"
+}
+Parameters: {
+  "ClientIPAddress": null
+}
+IPAddress: ::1
+Request: {
+  "Method": "GET",
+  "Url": "https://localhost:7102/",
+  "Path": "/",
+  "Query": [],
+  "Body": "",
+  "Form": null,
+  "Headers": {
+    "Accept": [
+      "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+    ],
+    "Host": [
+      "localhost:7102"
+    ],
+    "User-Agent": [
+      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+    ],
+    ":method": [
+      "GET"
+    ],
+    "Accept-Encoding": [
+      "gzip, deflate, br"
+    ],
+    "Accept-Language": [
+      "en-GB,en;q=0.9,bg-BG;q=0.8,bg;q=0.7,en-US;q=0.6"
+    ],
+    "Cache-Control": [
+      "max-age=0"
+    ],
+    "Cookie": [
+      ".AspNetCore.Antiforgery.1L9FrIpObnY=CfDJ8Dy3GDioeC5Iv8GnbSp3D-D7ltMsPm6Q9Qe3EE22OQEeH8ZcbZXV47e2cGQp-rxUAyxyV4wHw82LvMfzOsuLYvN4Vjd7oPw6c2d91khK5eUmda2lCi4ucdzfYdwet45fBl76Evu9wgL6w26z61LEdsc",
+      "active_session=CfDJ8Dy3GDioeC5Iv8GnbSp3D-B_McZpkMqc1_xjXozMdkhWq-8_xL1PEomlP_qIY3RieJgGpzTB_tKR2OjhSW8-aAl6ArBjHGxmwdiIDp2dFXkqQ_QOlhFx7L2yjVnUAem4vzg6anrndVQD-GE2S02lJlLif4Dm0zFZi9t9kuChDzr2E65SRNASXrKWZ373bHfr5kcDqKPO_ztNX8v286-CQZ_sc4XqJvf9tgdCk-xWzjXlEJ7_0S-wwn5_eg7FDF878M3HoE9fkDwAIEw_MaLOQu6pJwAqlpPv1nM8AH_wndGZl_ZOUCR8vkqrYy8bO6_p14xyrIhdWepg_HLLTtzneiDfKT9fhdpbdFZZTZJYiS7KwNeOxjDWZkZp65ZX4Uvq5ukmRgk4sAeNdsXEla8OXf43bELolfAtOGa_Vxe_FBUmx-ntD7QMXbVjvmQV2NcKhizdXl39aXDvezxH8EDhBrweJeeQZdt0Y2MTIp7jMi_vY5bg45o5QbzGeEBK3Nx-3FROM8roQ1rVPYKROqdLHV6yHZD7AqjucWZrUKlNkBtR"
+    ],
+    "Referer": [
+      "https://localhost:7102/"
+    ],
+    "Upgrade-Insecure-Requests": [
+      "1"
+    ],
+    "sec-ch-ua": [
+      "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\""
+    ],
+    "sec-ch-ua-mobile": [
+      "?0"
+    ],
+    "sec-ch-ua-platform": [
+      "\"Windows\""
+    ],
+    "DNT": [
+      "1"
+    ],
+    "sec-fetch-site": [
+      "same-origin"
+    ],
+    "sec-fetch-mode": [
+      "navigate"
+    ],
+    "sec-fetch-dest": [
+      "document"
+    ]
+  }
+}
+-------------------------------------------------
+
+Time: 19:18:05
+LogLevel: Error
+Code: GetProducts
+Exception: {
+  "ClientTitle": "Error",
+  "ClientMessage": "Could not establish connection.",
+  "Callback": "NONE",
+  "Handler": "NONE",
+  "Args": null,
+  "StatusCode": "GatewayTimeout",
+  "Message": "A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: TCP Provider, error: 0 - A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.)",
+  "Data": {},
+  "InnerException": null,
+  "HelpLink": null,
+  "Source": "Warehouse.Manager",
+  "HResult": -2146233088,
+  "StackTrace": "   at Warehouse.Manager.Services.DbCommandBase.ConnectionOpen()\r\n   at Warehouse.Manager.Services.DbCommandBase.GetTableResult(String stmt, List`1 parameters)\r\n   at Warehouse.Manager.Services.DbCommandBase.GetListResult[T](String stmt, List`1 parameters)\r\n   at Warehouse.Manager.Services.DbDataScopedService.GetProducts(Nullable`1 typeID, String name)"
+}
+Parameters: {
+  "ClientIPAddress": null
+}
+IPAddress: ::1
+Request: {
+  "Method": "GET",
+  "Url": "https://localhost:7102/",
+  "Path": "/",
+  "Query": [],
+  "Body": "",
+  "Form": null,
+  "Headers": {
+    "Accept": [
+      "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+    ],
+    "Host": [
+      "localhost:7102"
+    ],
+    "User-Agent": [
+      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+    ],
+    ":method": [
+      "GET"
+    ],
+    "Accept-Encoding": [
+      "gzip, deflate, br"
+    ],
+    "Accept-Language": [
+      "en-GB,en;q=0.9,bg-BG;q=0.8,bg;q=0.7,en-US;q=0.6"
+    ],
+    "Cache-Control": [
+      "max-age=0"
+    ],
+    "Cookie": [
+      ".AspNetCore.Antiforgery.1L9FrIpObnY=CfDJ8Dy3GDioeC5Iv8GnbSp3D-D7ltMsPm6Q9Qe3EE22OQEeH8ZcbZXV47e2cGQp-rxUAyxyV4wHw82LvMfzOsuLYvN4Vjd7oPw6c2d91khK5eUmda2lCi4ucdzfYdwet45fBl76Evu9wgL6w26z61LEdsc",
+      "active_session=CfDJ8Dy3GDioeC5Iv8GnbSp3D-AZj9iTIEiKVEoo8u0rNFdTA3w6Z9EhnFy64A1vWvjDo-prJIo58SvYTCqZ1G6WkCcrJmFqZufF3loUg_1KhGReAnAD76WQXkDJ3X3IxFdL1xnL66amhNDuBBLcAI4w0pYt8NbnewstoNyJFcEYJECiK3tLYDlyyXB-QeTwNbveDECOLQh1UT_DuBzb5yQfOZUKdPeANjothmqczpW3tfY417amDGE1Be6pGNhor1tCxM9-m8kgLbp2ERmZ3jJ_BYu3tgUL1xggHzsDX1UiSr8mCle6cyuFDvzudoTIQEuKmYOf7WpmmdDa-xDwNkpQpNiAWIgVsNI-og9rycwV5yWFc_l72ThtYQqTiFbmQ-lUQ4DZb8n4DwD792GSvuanUIDtyzJcRiNkAPwKoIWOzV_0NRV74ryzkskQBoOCgIWg1NJPUfTKhxPF-8bsjkWAopl3XddxyzhsewOs1vPtTOUhpHfG0ClChkLmY4ksUmsgiAZ9N4lq21wj4Zxd4V5G1yE"
+    ],
+    "Referer": [
+      "https://localhost:7102/"
+    ],
+    "Upgrade-Insecure-Requests": [
+      "1"
+    ],
+    "sec-ch-ua": [
+      "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\""
+    ],
+    "sec-ch-ua-mobile": [
+      "?0"
+    ],
+    "sec-ch-ua-platform": [
+      "\"Windows\""
+    ],
+    "DNT": [
+      "1"
+    ],
+    "sec-fetch-site": [
+      "same-origin"
+    ],
+    "sec-fetch-mode": [
+      "navigate"
+    ],
+    "sec-fetch-dest": [
+      "document"
+    ]
+  }
+}
+-------------------------------------------------
+
+Time: 21:03:08
+LogLevel: Error
+Code: GetProducts
+Exception: {
+  "ClientTitle": "Error",
+  "ClientMessage": "Error processing data.",
+  "Callback": "NONE",
+  "Handler": "NONE",
+  "Args": null,
+  "StatusCode": "ServiceUnavailable",
+  "Message": "{\"Message\":\"Invalid column name 'pTypeId'.\",\"Number\":207,\"Procedure\":\"\",\"LineNumber\":1}",
+  "Data": {},
+  "InnerException": null,
+  "HelpLink": null,
+  "Source": "Warehouse.Manager",
+  "HResult": -2146233088,
+  "StackTrace": "   at Warehouse.Manager.Utils.DatabaseException..ctor(SqlException sqlException) in D:\\Shared drives\\Projects\\ServerLangs_1701261030\\Warehouse.Manager\\Utils\\AppExcetion.cs:line 252\r\n   at Warehouse.Manager.Services.DbCommandBase.<>c__DisplayClass34_0.<GetTableResult>b__0(Exception _e) in D:\\Shared drives\\Projects\\ServerLangs_1701261030\\Warehouse.Manager\\Services\\DbCommandBase.cs:line 149\r\n   at Warehouse.Manager.Utils.ExceptionHelper.GetException(Exception e, Func`2 func) in D:\\Shared drives\\Projects\\ServerLangs_1701261030\\Warehouse.Manager\\Utils\\AppExcetion.cs:line 47\r\n   at Warehouse.Manager.Services.DbCommandBase.GetTableResult(String stmt, List`1 parameters) in D:\\Shared drives\\Projects\\ServerLangs_1701261030\\Warehouse.Manager\\Services\\DbCommandBase.cs:line 149\r\n   at Warehouse.Manager.Services.DbCommandBase.GetListResult[T](String stmt, List`1 parameters) in D:\\Shared drives\\Projects\\ServerLangs_1701261030\\Warehouse.Manager\\Services\\DbCommandBase.cs:line 411\r\n   at Warehouse.Manager.Services.DbDataScopedService.GetProducts(Nullable`1 typeID, String name) in D:\\Shared drives\\Projects\\ServerLangs_1701261030\\Warehouse.Manager\\Services\\DbDataScopedService.cs:line 78"
+}
+Parameters: {
+  "ClientIPAddress": null
+}
+IPAddress: ::1
+Request: {
+  "Method": "GET",
+  "Url": "https://localhost:7102/",
+  "Path": "/",
+  "Query": [],
+  "Body": "",
+  "Form": null,
+  "Headers": {
+    "Accept": [
+      "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+    ],
+    "Host": [
+      "localhost:7102"
+    ],
+    "User-Agent": [
+      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+    ],
+    ":method": [
+      "GET"
+    ],
+    "Accept-Encoding": [
+      "gzip, deflate, br"
+    ],
+    "Accept-Language": [
+      "en-GB,en;q=0.9,bg-BG;q=0.8,bg;q=0.7,en-US;q=0.6"
+    ],
+    "Cache-Control": [
+      "max-age=0"
+    ],
+    "Cookie": [
+      ".AspNetCore.Antiforgery.1L9FrIpObnY=CfDJ8Dy3GDioeC5Iv8GnbSp3D-D7ltMsPm6Q9Qe3EE22OQEeH8ZcbZXV47e2cGQp-rxUAyxyV4wHw82LvMfzOsuLYvN4Vjd7oPw6c2d91khK5eUmda2lCi4ucdzfYdwet45fBl76Evu9wgL6w26z61LEdsc",
+      "active_session=CfDJ8Dy3GDioeC5Iv8GnbSp3D-Ca0eVGDsyzQktGnjB_34RVkxBkPSK1D-UKH7gMMd6kD9oLOWrMonaljNwHkGM8CE18dWPZx9hvHKGcHXN8jnKaRVNC5_RPfQCe5JMCgj7aUCftLLBWeV9oWDlypKPjEAUOF0S_lRiviM_JO4dqM4eUJrwWOz_N6AmZpZwRlj86jgTlzGHD3o7HxL54-teVZTYMfOWU9tmmooGU6xRxx3cm23CRB5A8NnLqwg9QS56ZIu62uJw9_uZpVqGBaBpWlgr0RrajBNklROfFl8GvU34XKMPzNsyuHv34AghaHPCcrc60cpXlOKUIwphRZnFjTQTmA16jr7zQcd2CXaTDoTPKCdFiom1CTO94pSWoKXTImHQHt_lRx-OuVGnFG2xmeXnMmJm6p8Efu8YE1jdapKCkws5mND9rUfTSWv1LZZgy43D1CmVaXEPQ5nTlnxTu5WaH8rdM8TRsVtB0WJ5HpN6J7oxb-89rDSa-VdlRc2k2s7he1siL0Mom_6l673JVkdk"
+    ],
+    "Referer": [
+      "https://localhost:7102/Auth?ReturnUrl=%2F"
+    ],
+    "Upgrade-Insecure-Requests": [
+      "1"
+    ],
+    "DNT": [
+      "1"
+    ],
+    "sec-fetch-site": [
+      "same-origin"
+    ],
+    "sec-fetch-mode": [
+      "navigate"
+    ],
+    "sec-fetch-user": [
+      "?1"
+    ],
+    "sec-fetch-dest": [
+      "document"
+    ],
+    "sec-ch-ua": [
+      "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\""
+    ],
+    "sec-ch-ua-mobile": [
+      "?0"
+    ],
+    "sec-ch-ua-platform": [
+      "\"Windows\""
+    ]
+  }
+}
+-------------------------------------------------
+
+Time: 21:03:22
+LogLevel: Error
+Code: GetProducts
+Exception: {
+  "ClientTitle": "Error",
+  "ClientMessage": "Error processing data.",
+  "Callback": "NONE",
+  "Handler": "NONE",
+  "Args": null,
+  "StatusCode": "ServiceUnavailable",
+  "Message": "{\"Message\":\"Invalid column name 'pTypeId'.\",\"Number\":207,\"Procedure\":\"\",\"LineNumber\":1}",
+  "Data": {},
+  "InnerException": null,
+  "HelpLink": null,
+  "Source": "Warehouse.Manager",
+  "HResult": -2146233088,
+  "StackTrace": "   at Warehouse.Manager.Utils.DatabaseException..ctor(SqlException sqlException) in D:\\Shared drives\\Projects\\ServerLangs_1701261030\\Warehouse.Manager\\Utils\\AppExcetion.cs:line 252\r\n   at Warehouse.Manager.Services.DbCommandBase.<>c__DisplayClass34_0.<GetTableResult>b__0(Exception _e) in D:\\Shared drives\\Projects\\ServerLangs_1701261030\\Warehouse.Manager\\Services\\DbCommandBase.cs:line 149\r\n   at Warehouse.Manager.Utils.ExceptionHelper.GetException(Exception e, Func`2 func) in D:\\Shared drives\\Projects\\ServerLangs_1701261030\\Warehouse.Manager\\Utils\\AppExcetion.cs:line 47\r\n   at Warehouse.Manager.Services.DbCommandBase.GetTableResult(String stmt, List`1 parameters) in D:\\Shared drives\\Projects\\ServerLangs_1701261030\\Warehouse.Manager\\Services\\DbCommandBase.cs:line 149\r\n   at Warehouse.Manager.Services.DbCommandBase.GetListResult[T](String stmt, List`1 parameters) in D:\\Shared drives\\Projects\\ServerLangs_1701261030\\Warehouse.Manager\\Services\\DbCommandBase.cs:line 411\r\n   at Warehouse.Manager.Services.DbDataScopedService.GetProducts(Nullable`1 typeID, String name) in D:\\Shared drives\\Projects\\ServerLangs_1701261030\\Warehouse.Manager\\Services\\DbDataScopedService.cs:line 78"
+}
+Parameters: {
+  "ClientIPAddress": null
+}
+IPAddress: ::1
+Request: {
+  "Method": "GET",
+  "Url": "https://localhost:7102/",
+  "Path": "/",
+  "Query": [],
+  "Body": "",
+  "Form": null,
+  "Headers": {
+    "Accept": [
+      "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+    ],
+    "Host": [
+      "localhost:7102"
+    ],
+    "User-Agent": [
+      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+    ],
+    ":method": [
+      "GET"
+    ],
+    "Accept-Encoding": [
+      "gzip, deflate, br"
+    ],
+    "Accept-Language": [
+      "en-GB,en;q=0.9,bg-BG;q=0.8,bg;q=0.7,en-US;q=0.6"
+    ],
+    "Cookie": [
+      ".AspNetCore.Antiforgery.1L9FrIpObnY=CfDJ8Dy3GDioeC5Iv8GnbSp3D-D7ltMsPm6Q9Qe3EE22OQEeH8ZcbZXV47e2cGQp-rxUAyxyV4wHw82LvMfzOsuLYvN4Vjd7oPw6c2d91khK5eUmda2lCi4ucdzfYdwet45fBl76Evu9wgL6w26z61LEdsc",
+      "active_session=CfDJ8Dy3GDioeC5Iv8GnbSp3D-Ca0eVGDsyzQktGnjB_34RVkxBkPSK1D-UKH7gMMd6kD9oLOWrMonaljNwHkGM8CE18dWPZx9hvHKGcHXN8jnKaRVNC5_RPfQCe5JMCgj7aUCftLLBWeV9oWDlypKPjEAUOF0S_lRiviM_JO4dqM4eUJrwWOz_N6AmZpZwRlj86jgTlzGHD3o7HxL54-teVZTYMfOWU9tmmooGU6xRxx3cm23CRB5A8NnLqwg9QS56ZIu62uJw9_uZpVqGBaBpWlgr0RrajBNklROfFl8GvU34XKMPzNsyuHv34AghaHPCcrc60cpXlOKUIwphRZnFjTQTmA16jr7zQcd2CXaTDoTPKCdFiom1CTO94pSWoKXTImHQHt_lRx-OuVGnFG2xmeXnMmJm6p8Efu8YE1jdapKCkws5mND9rUfTSWv1LZZgy43D1CmVaXEPQ5nTlnxTu5WaH8rdM8TRsVtB0WJ5HpN6J7oxb-89rDSa-VdlRc2k2s7he1siL0Mom_6l673JVkdk"
+    ],
+    "Upgrade-Insecure-Requests": [
+      "1"
+    ],
+    "sec-ch-ua": [
+      "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\""
+    ],
+    "sec-ch-ua-mobile": [
+      "?0"
+    ],
+    "sec-ch-ua-platform": [
+      "\"Windows\""
+    ],
+    "DNT": [
+      "1"
+    ],
+    "sec-fetch-site": [
+      "none"
+    ],
+    "sec-fetch-mode": [
+      "navigate"
+    ],
+    "sec-fetch-user": [
+      "?1"
+    ],
+    "sec-fetch-dest": [
+      "document"
+    ]
+  }
+}
+-------------------------------------------------
+
+Time: 21:07:31
+LogLevel: Error
+Code: GetProducts
+Exception: {
+  "ClientTitle": "Error",
+  "ClientMessage": "Error processing data.",
+  "Callback": "NONE",
+  "Handler": "NONE",
+  "Args": null,
+  "StatusCode": "ServiceUnavailable",
+  "Message": "{\"Message\":\"Invalid column name 'pTypeId'.\",\"Number\":207,\"Procedure\":\"\",\"LineNumber\":1}",
+  "Data": {},
+  "InnerException": null,
+  "HelpLink": null,
+  "Source": "Warehouse.Manager",
+  "HResult": -2146233088,
+  "StackTrace": "   at Warehouse.Manager.Utils.DatabaseException..ctor(SqlException sqlException) in D:\\Shared drives\\Projects\\ServerLangs_1701261030\\Warehouse.Manager\\Utils\\AppExcetion.cs:line 252\r\n   at Warehouse.Manager.Services.DbCommandBase.<>c__DisplayClass34_0.<GetTableResult>b__0(Exception _e) in D:\\Shared drives\\Projects\\ServerLangs_1701261030\\Warehouse.Manager\\Services\\DbCommandBase.cs:line 149\r\n   at Warehouse.Manager.Utils.ExceptionHelper.GetException(Exception e, Func`2 func) in D:\\Shared drives\\Projects\\ServerLangs_1701261030\\Warehouse.Manager\\Utils\\AppExcetion.cs:line 47\r\n   at Warehouse.Manager.Services.DbCommandBase.GetTableResult(String stmt, List`1 parameters) in D:\\Shared drives\\Projects\\ServerLangs_1701261030\\Warehouse.Manager\\Services\\DbCommandBase.cs:line 149\r\n   at Warehouse.Manager.Services.DbCommandBase.GetListResult[T](String stmt, List`1 parameters) in D:\\Shared drives\\Projects\\ServerLangs_1701261030\\Warehouse.Manager\\Services\\DbCommandBase.cs:line 411\r\n   at Warehouse.Manager.Services.DbDataScopedService.GetProducts(Nullable`1 typeID, String name) in D:\\Shared drives\\Projects\\ServerLangs_1701261030\\Warehouse.Manager\\Services\\DbDataScopedService.cs:line 78"
+}
+Parameters: {
+  "ClientIPAddress": null
+}
+IPAddress: ::1
+Request: {
+  "Method": "GET",
+  "Url": "https://localhost:7102/",
+  "Path": "/",
+  "Query": [],
+  "Body": "",
+  "Form": null,
+  "Headers": {
+    "Accept": [
+      "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+    ],
+    "Host": [
+      "localhost:7102"
+    ],
+    "User-Agent": [
+      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+    ],
+    ":method": [
+      "GET"
+    ],
+    "Accept-Encoding": [
+      "gzip, deflate, br"
+    ],
+    "Accept-Language": [
+      "en-GB,en;q=0.9,bg-BG;q=0.8,bg;q=0.7,en-US;q=0.6"
+    ],
+    "Cookie": [
+      ".AspNetCore.Antiforgery.1L9FrIpObnY=CfDJ8Dy3GDioeC5Iv8GnbSp3D-D7ltMsPm6Q9Qe3EE22OQEeH8ZcbZXV47e2cGQp-rxUAyxyV4wHw82LvMfzOsuLYvN4Vjd7oPw6c2d91khK5eUmda2lCi4ucdzfYdwet45fBl76Evu9wgL6w26z61LEdsc",
+      "active_session=CfDJ8Dy3GDioeC5Iv8GnbSp3D-Ca0eVGDsyzQktGnjB_34RVkxBkPSK1D-UKH7gMMd6kD9oLOWrMonaljNwHkGM8CE18dWPZx9hvHKGcHXN8jnKaRVNC5_RPfQCe5JMCgj7aUCftLLBWeV9oWDlypKPjEAUOF0S_lRiviM_JO4dqM4eUJrwWOz_N6AmZpZwRlj86jgTlzGHD3o7HxL54-teVZTYMfOWU9tmmooGU6xRxx3cm23CRB5A8NnLqwg9QS56ZIu62uJw9_uZpVqGBaBpWlgr0RrajBNklROfFl8GvU34XKMPzNsyuHv34AghaHPCcrc60cpXlOKUIwphRZnFjTQTmA16jr7zQcd2CXaTDoTPKCdFiom1CTO94pSWoKXTImHQHt_lRx-OuVGnFG2xmeXnMmJm6p8Efu8YE1jdapKCkws5mND9rUfTSWv1LZZgy43D1CmVaXEPQ5nTlnxTu5WaH8rdM8TRsVtB0WJ5HpN6J7oxb-89rDSa-VdlRc2k2s7he1siL0Mom_6l673JVkdk"
+    ],
+    "Upgrade-Insecure-Requests": [
+      "1"
+    ],
+    "sec-ch-ua": [
+      "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\""
+    ],
+    "sec-ch-ua-mobile": [
+      "?0"
+    ],
+    "sec-ch-ua-platform": [
+      "\"Windows\""
+    ],
+    "DNT": [
+      "1"
+    ],
+    "sec-fetch-site": [
+      "none"
+    ],
+    "sec-fetch-mode": [
+      "navigate"
+    ],
+    "sec-fetch-user": [
+      "?1"
+    ],
+    "sec-fetch-dest": [
+      "document"
+    ]
+  }
+}
+-------------------------------------------------
+
+Time: 21:16:15
+LogLevel: Error
+Code: GetProducts
+Exception: {
+  "ClientTitle": "Error",
+  "ClientMessage": "Could not establish connection.",
+  "Callback": "NONE",
+  "Handler": "NONE",
+  "Args": null,
+  "StatusCode": "GatewayTimeout",
+  "Message": "Could not close the connection. Current connection state is Open.",
+  "Data": {},
+  "InnerException": null,
+  "HelpLink": null,
+  "Source": "Warehouse.Manager",
+  "HResult": -2146233088,
+  "StackTrace": "   at Warehouse.Manager.Services.DbCommandBase.ConnectionClose(Boolean force)\r\n   at Warehouse.Manager.Services.DbCommandBase.GetTableResult(String stmt, List`1 parameters)\r\n   at Warehouse.Manager.Services.DbCommandBase.GetListResult[T](String stmt, List`1 parameters)\r\n   at Warehouse.Manager.Services.DbDataScopedService.GetProducts(Nullable`1 typeID, String name)"
+}
+Parameters: {
+  "ClientIPAddress": null
+}
+IPAddress: ::1
+Request: {
+  "Method": "GET",
+  "Url": "https://localhost:7102/",
+  "Path": "/",
+  "Query": [],
+  "Body": "",
+  "Form": null,
+  "Headers": {
+    "Accept": [
+      "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+    ],
+    "Host": [
+      "localhost:7102"
+    ],
+    "User-Agent": [
+      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+    ],
+    ":method": [
+      "GET"
+    ],
+    "Accept-Encoding": [
+      "gzip, deflate, br"
+    ],
+    "Accept-Language": [
+      "en-GB,en;q=0.9,bg-BG;q=0.8,bg;q=0.7,en-US;q=0.6"
+    ],
+    "Cache-Control": [
+      "max-age=0"
+    ],
+    "Cookie": [
+      ".AspNetCore.Antiforgery.1L9FrIpObnY=CfDJ8Dy3GDioeC5Iv8GnbSp3D-D7ltMsPm6Q9Qe3EE22OQEeH8ZcbZXV47e2cGQp-rxUAyxyV4wHw82LvMfzOsuLYvN4Vjd7oPw6c2d91khK5eUmda2lCi4ucdzfYdwet45fBl76Evu9wgL6w26z61LEdsc",
+      "active_session=CfDJ8Dy3GDioeC5Iv8GnbSp3D-Ca0eVGDsyzQktGnjB_34RVkxBkPSK1D-UKH7gMMd6kD9oLOWrMonaljNwHkGM8CE18dWPZx9hvHKGcHXN8jnKaRVNC5_RPfQCe5JMCgj7aUCftLLBWeV9oWDlypKPjEAUOF0S_lRiviM_JO4dqM4eUJrwWOz_N6AmZpZwRlj86jgTlzGHD3o7HxL54-teVZTYMfOWU9tmmooGU6xRxx3cm23CRB5A8NnLqwg9QS56ZIu62uJw9_uZpVqGBaBpWlgr0RrajBNklROfFl8GvU34XKMPzNsyuHv34AghaHPCcrc60cpXlOKUIwphRZnFjTQTmA16jr7zQcd2CXaTDoTPKCdFiom1CTO94pSWoKXTImHQHt_lRx-OuVGnFG2xmeXnMmJm6p8Efu8YE1jdapKCkws5mND9rUfTSWv1LZZgy43D1CmVaXEPQ5nTlnxTu5WaH8rdM8TRsVtB0WJ5HpN6J7oxb-89rDSa-VdlRc2k2s7he1siL0Mom_6l673JVkdk"
+    ],
+    "Referer": [
+      "https://localhost:7102/"
+    ],
+    "Upgrade-Insecure-Requests": [
+      "1"
+    ],
+    "sec-ch-ua": [
+      "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\""
+    ],
+    "sec-ch-ua-mobile": [
+      "?0"
+    ],
+    "sec-ch-ua-platform": [
+      "\"Windows\""
+    ],
+    "DNT": [
+      "1"
+    ],
+    "sec-fetch-site": [
+      "same-origin"
+    ],
+    "sec-fetch-mode": [
+      "navigate"
+    ],
+    "sec-fetch-dest": [
+      "document"
+    ]
+  }
+}
+-------------------------------------------------
+
+Time: 21:16:16
+LogLevel: Error
+Code: 0x9000101
+Exception: {
+  "ClassName": "System.Exception",
+  "Message": "Dispose of $DbCommandBase",
+  "Data": null,
+  "InnerException": null,
+  "HelpURL": null,
+  "StackTraceString": null,
+  "RemoteStackTraceString": null,
+  "RemoteStackIndex": 0,
+  "ExceptionMethod": null,
+  "HResult": -2146233088,
+  "Source": null,
+  "WatsonBuckets": null
+}
+Parameters: {
+  "command": "",
+  "parameters": {},
+  "InTransaction": false,
+  "ConnectionOpened": true,
+  "UnauthorizedAccessAllowed": false
+}
+IPAddress: ::1
+Request: {
+  "Method": "GET",
+  "Url": "https://localhost:7102/",
+  "Path": "/",
+  "Query": [],
+  "Body": "",
+  "Form": null,
+  "Headers": {
+    "Accept": [
+      "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+    ],
+    "Host": [
+      "localhost:7102"
+    ],
+    "User-Agent": [
+      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+    ],
+    ":method": [
+      "GET"
+    ],
+    "Accept-Encoding": [
+      "gzip, deflate, br"
+    ],
+    "Accept-Language": [
+      "en-GB,en;q=0.9,bg-BG;q=0.8,bg;q=0.7,en-US;q=0.6"
+    ],
+    "Cache-Control": [
+      "max-age=0"
+    ],
+    "Cookie": [
+      ".AspNetCore.Antiforgery.1L9FrIpObnY=CfDJ8Dy3GDioeC5Iv8GnbSp3D-D7ltMsPm6Q9Qe3EE22OQEeH8ZcbZXV47e2cGQp-rxUAyxyV4wHw82LvMfzOsuLYvN4Vjd7oPw6c2d91khK5eUmda2lCi4ucdzfYdwet45fBl76Evu9wgL6w26z61LEdsc",
+      "active_session=CfDJ8Dy3GDioeC5Iv8GnbSp3D-Ca0eVGDsyzQktGnjB_34RVkxBkPSK1D-UKH7gMMd6kD9oLOWrMonaljNwHkGM8CE18dWPZx9hvHKGcHXN8jnKaRVNC5_RPfQCe5JMCgj7aUCftLLBWeV9oWDlypKPjEAUOF0S_lRiviM_JO4dqM4eUJrwWOz_N6AmZpZwRlj86jgTlzGHD3o7HxL54-teVZTYMfOWU9tmmooGU6xRxx3cm23CRB5A8NnLqwg9QS56ZIu62uJw9_uZpVqGBaBpWlgr0RrajBNklROfFl8GvU34XKMPzNsyuHv34AghaHPCcrc60cpXlOKUIwphRZnFjTQTmA16jr7zQcd2CXaTDoTPKCdFiom1CTO94pSWoKXTImHQHt_lRx-OuVGnFG2xmeXnMmJm6p8Efu8YE1jdapKCkws5mND9rUfTSWv1LZZgy43D1CmVaXEPQ5nTlnxTu5WaH8rdM8TRsVtB0WJ5HpN6J7oxb-89rDSa-VdlRc2k2s7he1siL0Mom_6l673JVkdk"
+    ],
+    "Referer": [
+      "https://localhost:7102/"
+    ],
+    "Upgrade-Insecure-Requests": [
+      "1"
+    ],
+    "sec-ch-ua": [
+      "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\""
+    ],
+    "sec-ch-ua-mobile": [
+      "?0"
+    ],
+    "sec-ch-ua-platform": [
+      "\"Windows\""
+    ],
+    "DNT": [
+      "1"
+    ],
+    "sec-fetch-site": [
+      "same-origin"
+    ],
+    "sec-fetch-mode": [
+      "navigate"
+    ],
+    "sec-fetch-dest": [
+      "document"
+    ]
+  }
+}
+-------------------------------------------------
+
+Time: 21:22:21
+LogLevel: Error
+Code: GetProducts
+Exception: {
+  "ClientTitle": "Error",
+  "ClientMessage": "Error processing data.",
+  "Callback": "NONE",
+  "Handler": "NONE",
+  "Args": null,
+  "StatusCode": "ServiceUnavailable",
+  "Message": "{\"Message\":\"A transport-level error has occurred when receiving results from the server. (provider: Session Provider, error: 19 - Physical connection is not usable)\",\"Number\":-1,\"Procedure\":null,\"LineNumber\":0}",
+  "Data": {},
+  "InnerException": null,
+  "HelpLink": null,
+  "Source": "Warehouse.Manager",
+  "HResult": -2146233088,
+  "StackTrace": "   at Warehouse.Manager.Utils.DatabaseException..ctor(SqlException sqlException)\r\n   at Warehouse.Manager.Services.DbCommandBase.<>c__DisplayClass34_0.<GetTableResult>b__0(Exception _e)\r\n   at Warehouse.Manager.Utils.ExceptionHelper.GetException(Exception e, Func`2 func)\r\n   at Warehouse.Manager.Services.DbCommandBase.GetTableResult(String stmt, List`1 parameters)\r\n   at Warehouse.Manager.Services.DbCommandBase.GetListResult[T](String stmt, List`1 parameters)\r\n   at Warehouse.Manager.Services.DbDataScopedService.GetProducts(Nullable`1 typeID, String name)"
+}
+Parameters: {
+  "ClientIPAddress": null
+}
+IPAddress: ::1
+Request: {
+  "Method": "GET",
+  "Url": "https://localhost:7102/?SearchFilter.SearchText=awdawdawdawdaw",
+  "Path": "/",
+  "Query": [
+    {
+      "Key": "SearchFilter.SearchText",
+      "Value": [
+        "awdawdawdawdaw"
+      ]
+    }
+  ],
+  "Body": "",
+  "Form": null,
+  "Headers": {
+    "Accept": [
+      "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+    ],
+    "Host": [
+      "localhost:7102"
+    ],
+    "User-Agent": [
+      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+    ],
+    ":method": [
+      "GET"
+    ],
+    "Accept-Encoding": [
+      "gzip, deflate, br"
+    ],
+    "Accept-Language": [
+      "en-GB,en;q=0.9,bg-BG;q=0.8,bg;q=0.7,en-US;q=0.6"
+    ],
+    "Cache-Control": [
+      "max-age=0"
+    ],
+    "Cookie": [
+      ".AspNetCore.Antiforgery.1L9FrIpObnY=CfDJ8Dy3GDioeC5Iv8GnbSp3D-D7ltMsPm6Q9Qe3EE22OQEeH8ZcbZXV47e2cGQp-rxUAyxyV4wHw82LvMfzOsuLYvN4Vjd7oPw6c2d91khK5eUmda2lCi4ucdzfYdwet45fBl76Evu9wgL6w26z61LEdsc",
+      "active_session=CfDJ8Dy3GDioeC5Iv8GnbSp3D-Aokfy3-I6Cfo4wO18bdzrz9UsILfgancNiAqsRqhp4rF7jBuBzbtqp9ApCNNZcxYEo1lkEpPbrbriSg1Jg-tvQ7qmRK6X7d_BwY5wYANtjgZaUIVxiJnof8BV9RtgcjThvFV8NTmiseHKpJ20O4MGSq1Mol5xjEcKlxCRBvKYEj3OioqXk0NAQJDpsbmzHhN7PCHjf0wu64CsEKYp7aL4tz6DBgGZ2pGUjEAl4zdxF3ElhPMuS9chzWm1RwGqPJeP2QeH0w-XO1whbVnNOFGBSxyfY5kAcVR-BWsEF71H4Y1IZiwkvCBPkL0-1qyrQ6oElixQM7nNi99uWmhyTIJPIOnbqISIIjgUk_IYyLH6y2j-asV34fi9BWNo9OLzLL_fNU5ogOAhUDwGkJpcwROq8fRKHnA8sHHzibwkejKpwpU9aZDsDRttzYt3aVpVSGQF105DmXlVyaVCjwxX5CdSqmN5XKIqmiR8HlEgreqIg94rhjDp-HPZ6SfezrG8zCzU"
+    ],
+    "Referer": [
+      "https://localhost:7102/?SearchFilter.SearchText=awdawdawdawdaw"
+    ],
+    "Upgrade-Insecure-Requests": [
+      "1"
+    ],
+    "sec-ch-ua": [
+      "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\""
+    ],
+    "sec-ch-ua-mobile": [
+      "?0"
+    ],
+    "sec-ch-ua-platform": [
+      "\"Windows\""
+    ],
+    "DNT": [
+      "1"
+    ],
+    "sec-fetch-site": [
+      "same-origin"
+    ],
+    "sec-fetch-mode": [
+      "navigate"
+    ],
+    "sec-fetch-dest": [
+      "document"
+    ]
+  }
+}
+-------------------------------------------------
+
+Time: 21:22:30
+LogLevel: Error
+Code: GetProducts
+Exception: {
+  "ClientTitle": "Error",
+  "ClientMessage": "Could not establish connection.",
+  "Callback": "NONE",
+  "Handler": "NONE",
+  "Args": null,
+  "StatusCode": "GatewayTimeout",
+  "Message": "A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: TCP Provider, error: 0 - A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.)",
+  "Data": {},
+  "InnerException": null,
+  "HelpLink": null,
+  "Source": "Warehouse.Manager",
+  "HResult": -2146233088,
+  "StackTrace": "   at Warehouse.Manager.Services.DbCommandBase.ConnectionOpen()\r\n   at Warehouse.Manager.Services.DbCommandBase.GetTableResult(String stmt, List`1 parameters)\r\n   at Warehouse.Manager.Services.DbCommandBase.GetListResult[T](String stmt, List`1 parameters)\r\n   at Warehouse.Manager.Services.DbDataScopedService.GetProducts(Nullable`1 typeID, String name)"
+}
+Parameters: {
+  "ClientIPAddress": null
+}
+IPAddress: ::1
+Request: {
+  "Method": "GET",
+  "Url": "https://localhost:7102/?SearchFilter.SearchText=awdawdawdawdaw",
+  "Path": "/",
+  "Query": [
+    {
+      "Key": "SearchFilter.SearchText",
+      "Value": [
+        "awdawdawdawdaw"
+      ]
+    }
+  ],
+  "Body": "",
+  "Form": null,
+  "Headers": {
+    "Accept": [
+      "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+    ],
+    "Host": [
+      "localhost:7102"
+    ],
+    "User-Agent": [
+      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+    ],
+    ":method": [
+      "GET"
+    ],
+    "Accept-Encoding": [
+      "gzip, deflate, br"
+    ],
+    "Accept-Language": [
+      "en-GB,en;q=0.9,bg-BG;q=0.8,bg;q=0.7,en-US;q=0.6"
+    ],
+    "Cache-Control": [
+      "max-age=0"
+    ],
+    "Cookie": [
+      ".AspNetCore.Antiforgery.1L9FrIpObnY=CfDJ8Dy3GDioeC5Iv8GnbSp3D-D7ltMsPm6Q9Qe3EE22OQEeH8ZcbZXV47e2cGQp-rxUAyxyV4wHw82LvMfzOsuLYvN4Vjd7oPw6c2d91khK5eUmda2lCi4ucdzfYdwet45fBl76Evu9wgL6w26z61LEdsc",
+      "active_session=CfDJ8Dy3GDioeC5Iv8GnbSp3D-Aokfy3-I6Cfo4wO18bdzrz9UsILfgancNiAqsRqhp4rF7jBuBzbtqp9ApCNNZcxYEo1lkEpPbrbriSg1Jg-tvQ7qmRK6X7d_BwY5wYANtjgZaUIVxiJnof8BV9RtgcjThvFV8NTmiseHKpJ20O4MGSq1Mol5xjEcKlxCRBvKYEj3OioqXk0NAQJDpsbmzHhN7PCHjf0wu64CsEKYp7aL4tz6DBgGZ2pGUjEAl4zdxF3ElhPMuS9chzWm1RwGqPJeP2QeH0w-XO1whbVnNOFGBSxyfY5kAcVR-BWsEF71H4Y1IZiwkvCBPkL0-1qyrQ6oElixQM7nNi99uWmhyTIJPIOnbqISIIjgUk_IYyLH6y2j-asV34fi9BWNo9OLzLL_fNU5ogOAhUDwGkJpcwROq8fRKHnA8sHHzibwkejKpwpU9aZDsDRttzYt3aVpVSGQF105DmXlVyaVCjwxX5CdSqmN5XKIqmiR8HlEgreqIg94rhjDp-HPZ6SfezrG8zCzU"
+    ],
+    "Referer": [
+      "https://localhost:7102/?SearchFilter.SearchText=awdawdawdawdaw"
+    ],
+    "Upgrade-Insecure-Requests": [
+      "1"
+    ],
+    "sec-ch-ua": [
+      "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\""
+    ],
+    "sec-ch-ua-mobile": [
+      "?0"
+    ],
+    "sec-ch-ua-platform": [
+      "\"Windows\""
+    ],
+    "DNT": [
+      "1"
+    ],
+    "sec-fetch-site": [
+      "same-origin"
+    ],
+    "sec-fetch-mode": [
+      "navigate"
+    ],
+    "sec-fetch-dest": [
+      "document"
+    ]
+  }
+}
+-------------------------------------------------
+
+Time: 21:24:23
+LogLevel: Error
+Code: GetProducts
+Exception: {
+  "ClientTitle": "Error",
+  "ClientMessage": "Could not establish connection.",
+  "Callback": "NONE",
+  "Handler": "NONE",
+  "Args": null,
+  "StatusCode": "GatewayTimeout",
+  "Message": "Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=15041; handshake=4; ",
+  "Data": {},
+  "InnerException": null,
+  "HelpLink": null,
+  "Source": "Warehouse.Manager",
+  "HResult": -2146233088,
+  "StackTrace": "   at Warehouse.Manager.Services.DbCommandBase.ConnectionOpen()\r\n   at Warehouse.Manager.Services.DbCommandBase.GetTableResult(String stmt, List`1 parameters)\r\n   at Warehouse.Manager.Services.DbCommandBase.GetListResult[T](String stmt, List`1 parameters)\r\n   at Warehouse.Manager.Services.DbDataScopedService.GetProducts(Nullable`1 typeID, String name)"
+}
+Parameters: {
+  "ClientIPAddress": null
+}
+IPAddress: ::1
+Request: {
+  "Method": "GET",
+  "Url": "https://localhost:7102/?SearchFilter.SearchText=awdawdawdawdaw",
+  "Path": "/",
+  "Query": [
+    {
+      "Key": "SearchFilter.SearchText",
+      "Value": [
+        "awdawdawdawdaw"
+      ]
+    }
+  ],
+  "Body": "",
+  "Form": null,
+  "Headers": {
+    "Accept": [
+      "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+    ],
+    "Host": [
+      "localhost:7102"
+    ],
+    "User-Agent": [
+      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+    ],
+    ":method": [
+      "GET"
+    ],
+    "Accept-Encoding": [
+      "gzip, deflate, br"
+    ],
+    "Accept-Language": [
+      "en-GB,en;q=0.9,bg-BG;q=0.8,bg;q=0.7,en-US;q=0.6"
+    ],
+    "Cache-Control": [
+      "max-age=0"
+    ],
+    "Cookie": [
+      ".AspNetCore.Antiforgery.1L9FrIpObnY=CfDJ8Dy3GDioeC5Iv8GnbSp3D-D7ltMsPm6Q9Qe3EE22OQEeH8ZcbZXV47e2cGQp-rxUAyxyV4wHw82LvMfzOsuLYvN4Vjd7oPw6c2d91khK5eUmda2lCi4ucdzfYdwet45fBl76Evu9wgL6w26z61LEdsc",
+      "active_session=CfDJ8Dy3GDioeC5Iv8GnbSp3D-Aokfy3-I6Cfo4wO18bdzrz9UsILfgancNiAqsRqhp4rF7jBuBzbtqp9ApCNNZcxYEo1lkEpPbrbriSg1Jg-tvQ7qmRK6X7d_BwY5wYANtjgZaUIVxiJnof8BV9RtgcjThvFV8NTmiseHKpJ20O4MGSq1Mol5xjEcKlxCRBvKYEj3OioqXk0NAQJDpsbmzHhN7PCHjf0wu64CsEKYp7aL4tz6DBgGZ2pGUjEAl4zdxF3ElhPMuS9chzWm1RwGqPJeP2QeH0w-XO1whbVnNOFGBSxyfY5kAcVR-BWsEF71H4Y1IZiwkvCBPkL0-1qyrQ6oElixQM7nNi99uWmhyTIJPIOnbqISIIjgUk_IYyLH6y2j-asV34fi9BWNo9OLzLL_fNU5ogOAhUDwGkJpcwROq8fRKHnA8sHHzibwkejKpwpU9aZDsDRttzYt3aVpVSGQF105DmXlVyaVCjwxX5CdSqmN5XKIqmiR8HlEgreqIg94rhjDp-HPZ6SfezrG8zCzU"
+    ],
+    "Referer": [
+      "https://localhost:7102/?SearchFilter.SearchText=awdawdawdawdaw"
+    ],
+    "Upgrade-Insecure-Requests": [
+      "1"
+    ],
+    "sec-ch-ua": [
+      "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\""
+    ],
+    "sec-ch-ua-mobile": [
+      "?0"
+    ],
+    "sec-ch-ua-platform": [
+      "\"Windows\""
+    ],
+    "DNT": [
+      "1"
+    ],
+    "sec-fetch-site": [
+      "same-origin"
+    ],
+    "sec-fetch-mode": [
+      "navigate"
+    ],
+    "sec-fetch-dest": [
+      "document"
+    ]
+  }
+}
+-------------------------------------------------
+
+Time: 21:42:27
+LogLevel: Error
+Code: GetProducts
+Exception: {
+  "ClientTitle": "Error",
+  "ClientMessage": "Could not establish connection.",
+  "Callback": "NONE",
+  "Handler": "NONE",
+  "Args": null,
+  "StatusCode": "GatewayTimeout",
+  "Message": "A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: TCP Provider, error: 0 - A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.)",
+  "Data": {},
+  "InnerException": null,
+  "HelpLink": null,
+  "Source": "Warehouse.Manager",
+  "HResult": -2146233088,
+  "StackTrace": "   at Warehouse.Manager.Services.DbCommandBase.ConnectionOpen() in D:\\Shared drives\\Projects\\ServerLangs_1701261030\\Warehouse.Manager\\Services\\DbCommandBase.cs:line 71\r\n   at Warehouse.Manager.Services.DbCommandBase.GetTableResult(String stmt, List`1 parameters) in D:\\Shared drives\\Projects\\ServerLangs_1701261030\\Warehouse.Manager\\Services\\DbCommandBase.cs:line 139\r\n   at Warehouse.Manager.Services.DbCommandBase.GetListResult[T](String stmt, List`1 parameters) in D:\\Shared drives\\Projects\\ServerLangs_1701261030\\Warehouse.Manager\\Services\\DbCommandBase.cs:line 411\r\n   at Warehouse.Manager.Services.DbDataScopedService.GetProducts(Nullable`1 typeID, String name) in D:\\Shared drives\\Projects\\ServerLangs_1701261030\\Warehouse.Manager\\Services\\DbDataScopedService.cs:line 78"
+}
+Parameters: {
+  "ClientIPAddress": null
+}
+IPAddress: ::1
+Request: {
+  "Method": "GET",
+  "Url": "https://localhost:7102/",
+  "Path": "/",
+  "Query": [],
+  "Body": "",
+  "Form": null,
+  "Headers": {
+    "Accept": [
+      "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+    ],
+    "Host": [
+      "localhost:7102"
+    ],
+    "User-Agent": [
+      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+    ],
+    ":method": [
+      "GET"
+    ],
+    "Accept-Encoding": [
+      "gzip, deflate, br"
+    ],
+    "Accept-Language": [
+      "en-GB,en;q=0.9,bg-BG;q=0.8,bg;q=0.7,en-US;q=0.6"
+    ],
+    "Cookie": [
+      ".AspNetCore.Antiforgery.1L9FrIpObnY=CfDJ8Dy3GDioeC5Iv8GnbSp3D-D7ltMsPm6Q9Qe3EE22OQEeH8ZcbZXV47e2cGQp-rxUAyxyV4wHw82LvMfzOsuLYvN4Vjd7oPw6c2d91khK5eUmda2lCi4ucdzfYdwet45fBl76Evu9wgL6w26z61LEdsc",
+      "active_session=CfDJ8Dy3GDioeC5Iv8GnbSp3D-Aokfy3-I6Cfo4wO18bdzrz9UsILfgancNiAqsRqhp4rF7jBuBzbtqp9ApCNNZcxYEo1lkEpPbrbriSg1Jg-tvQ7qmRK6X7d_BwY5wYANtjgZaUIVxiJnof8BV9RtgcjThvFV8NTmiseHKpJ20O4MGSq1Mol5xjEcKlxCRBvKYEj3OioqXk0NAQJDpsbmzHhN7PCHjf0wu64CsEKYp7aL4tz6DBgGZ2pGUjEAl4zdxF3ElhPMuS9chzWm1RwGqPJeP2QeH0w-XO1whbVnNOFGBSxyfY5kAcVR-BWsEF71H4Y1IZiwkvCBPkL0-1qyrQ6oElixQM7nNi99uWmhyTIJPIOnbqISIIjgUk_IYyLH6y2j-asV34fi9BWNo9OLzLL_fNU5ogOAhUDwGkJpcwROq8fRKHnA8sHHzibwkejKpwpU9aZDsDRttzYt3aVpVSGQF105DmXlVyaVCjwxX5CdSqmN5XKIqmiR8HlEgreqIg94rhjDp-HPZ6SfezrG8zCzU"
+    ],
+    "Upgrade-Insecure-Requests": [
+      "1"
+    ],
+    "sec-ch-ua": [
+      "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\""
+    ],
+    "sec-ch-ua-mobile": [
+      "?0"
+    ],
+    "sec-ch-ua-platform": [
+      "\"Windows\""
+    ],
+    "DNT": [
+      "1"
+    ],
+    "sec-fetch-site": [
+      "none"
+    ],
+    "sec-fetch-mode": [
+      "navigate"
+    ],
+    "sec-fetch-user": [
+      "?1"
+    ],
+    "sec-fetch-dest": [
+      "document"
+    ]
+  }
+}
+-------------------------------------------------
+
+Time: 21:50:04
+LogLevel: Error
+Code: GetProducts
+Exception: {
+  "ClientTitle": "Error",
+  "ClientMessage": "Could not establish connection.",
+  "Callback": "NONE",
+  "Handler": "NONE",
+  "Args": null,
+  "StatusCode": "GatewayTimeout",
+  "Message": "A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: TCP Provider, error: 0 - A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.)",
+  "Data": {},
+  "InnerException": null,
+  "HelpLink": null,
+  "Source": "Warehouse.Manager",
+  "HResult": -2146233088,
+  "StackTrace": "   at Warehouse.Manager.Services.DbCommandBase.ConnectionOpen() in D:\\Shared drives\\Projects\\ServerLangs_1701261030\\Warehouse.Manager\\Services\\DbCommandBase.cs:line 71\r\n   at Warehouse.Manager.Services.DbCommandBase.GetTableResult(String stmt, List`1 parameters) in D:\\Shared drives\\Projects\\ServerLangs_1701261030\\Warehouse.Manager\\Services\\DbCommandBase.cs:line 139\r\n   at Warehouse.Manager.Services.DbCommandBase.GetListResult[T](String stmt, List`1 parameters) in D:\\Shared drives\\Projects\\ServerLangs_1701261030\\Warehouse.Manager\\Services\\DbCommandBase.cs:line 411\r\n   at Warehouse.Manager.Services.DbDataScopedService.GetProducts(Nullable`1 typeID, String name) in D:\\Shared drives\\Projects\\ServerLangs_1701261030\\Warehouse.Manager\\Services\\DbDataScopedService.cs:line 78"
+}
+Parameters: {
+  "ClientIPAddress": null
+}
+IPAddress: ::1
+Request: {
+  "Method": "GET",
+  "Url": "https://localhost:7102/",
+  "Path": "/",
+  "Query": [],
+  "Body": "",
+  "Form": null,
+  "Headers": {
+    "Accept": [
+      "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+    ],
+    "Host": [
+      "localhost:7102"
+    ],
+    "User-Agent": [
+      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+    ],
+    ":method": [
+      "GET"
+    ],
+    "Accept-Encoding": [
+      "gzip, deflate, br"
+    ],
+    "Accept-Language": [
+      "en-GB,en;q=0.9,bg-BG;q=0.8,bg;q=0.7,en-US;q=0.6"
+    ],
+    "Cookie": [
+      ".AspNetCore.Antiforgery.1L9FrIpObnY=CfDJ8Dy3GDioeC5Iv8GnbSp3D-D7ltMsPm6Q9Qe3EE22OQEeH8ZcbZXV47e2cGQp-rxUAyxyV4wHw82LvMfzOsuLYvN4Vjd7oPw6c2d91khK5eUmda2lCi4ucdzfYdwet45fBl76Evu9wgL6w26z61LEdsc",
+      "active_session=CfDJ8Dy3GDioeC5Iv8GnbSp3D-AhsaOmlLf7_R0dJN8HoKxxztxSitJ9X9ixm6v6WF14NWw4f36bIUcp8MQYqbyX3hs59WJkfu8AS2knIGDNV5P5kDmK_NZHtzah3Y4V7zutW0ebWd8mcYhJ0Ao7WZA_IxhW3MiksX1gESHn9niOP4RgpLFQjgFg5om7drUbziNhdSCQbNtgKAZQ397ulPcNxPqBJbjmP9s1Rh0xQ7lq_VfVpp0Mkc1feKsUE6TYETy-i5F2Hd-lwzP2DvVZVvmoI3pRMS4SjgbvqNodQ_pSGi4iVErx1k4RCIOMnQSmCFyzEsyVHjCtORiPhj8qCjPCGC68K4Yoel4Zgrb8EPsAB8VQjxv9EfJBAo_ZMRH4UgYv-3kl7OHF0yJ_F9uaDFLcXmfxoWgwGjfSbKsElAMfYA-EE_7Zq5tV05G1h2M0WHisLu3e0cVMhlrvuW9o2FIL_T_gBK8krvvh7OdO8iI2-eYsyD1ZUw8g0K-nGmDlW52kkssdGRkS4ukMnHdaODti7EE"
+    ],
+    "Upgrade-Insecure-Requests": [
+      "1"
+    ],
+    "sec-ch-ua": [
+      "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\""
+    ],
+    "sec-ch-ua-mobile": [
+      "?0"
+    ],
+    "sec-ch-ua-platform": [
+      "\"Windows\""
+    ],
+    "DNT": [
+      "1"
+    ],
+    "sec-fetch-site": [
+      "none"
+    ],
+    "sec-fetch-mode": [
+      "navigate"
+    ],
+    "sec-fetch-user": [
+      "?1"
+    ],
+    "sec-fetch-dest": [
+      "document"
+    ]
+  }
+}
+-------------------------------------------------
+
+Time: 22:20:42
+LogLevel: Error
+Code: GetProducts
+Exception: {
+  "ClientTitle": "Error",
+  "ClientMessage": "Could not establish connection.",
+  "Callback": "NONE",
+  "Handler": "NONE",
+  "Args": null,
+  "StatusCode": "GatewayTimeout",
+  "Message": "A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: TCP Provider, error: 0 - A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.)",
+  "Data": {},
+  "InnerException": null,
+  "HelpLink": null,
+  "Source": "Warehouse.Manager",
+  "HResult": -2146233088,
+  "StackTrace": "   at Warehouse.Manager.Services.DbCommandBase.ConnectionOpen()\r\n   at Warehouse.Manager.Services.DbCommandBase.GetTableResult(String stmt, List`1 parameters)\r\n   at Warehouse.Manager.Services.DbCommandBase.GetListResult[T](String stmt, List`1 parameters)\r\n   at Warehouse.Manager.Services.DbDataScopedService.GetProducts(Nullable`1 typeID, String name)"
+}
+Parameters: {
+  "ClientIPAddress": null
+}
+IPAddress: ::1
+Request: {
+  "Method": "GET",
+  "Url": "https://localhost:7102/",
+  "Path": "/",
+  "Query": [],
+  "Body": "",
+  "Form": null,
+  "Headers": {
+    "Accept": [
+      "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+    ],
+    "Host": [
+      "localhost:7102"
+    ],
+    "User-Agent": [
+      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+    ],
+    ":method": [
+      "GET"
+    ],
+    "Accept-Encoding": [
+      "gzip, deflate, br"
+    ],
+    "Accept-Language": [
+      "en-GB,en;q=0.9,bg-BG;q=0.8,bg;q=0.7,en-US;q=0.6"
+    ],
+    "Cache-Control": [
+      "max-age=0"
+    ],
+    "Cookie": [
+      ".AspNetCore.Antiforgery.1L9FrIpObnY=CfDJ8Dy3GDioeC5Iv8GnbSp3D-D7ltMsPm6Q9Qe3EE22OQEeH8ZcbZXV47e2cGQp-rxUAyxyV4wHw82LvMfzOsuLYvN4Vjd7oPw6c2d91khK5eUmda2lCi4ucdzfYdwet45fBl76Evu9wgL6w26z61LEdsc",
+      "active_session=CfDJ8Dy3GDioeC5Iv8GnbSp3D-CaPgAnbGsRTFfkgq0lsO94xcGOJeRWRZV2LUXqgS2uAicCdgMUMBRy_F3wCJBLfloH7rj-vz3Q224yIeS1i527qvtAE3OftteQHh5J_4oDD5W-onkDiDz4wRiHum1w6jonhxsgjViusGZianc58eODfAihJKJbexvymRLOqK5M_KH6tIOEt9fdm8YLXENz5ael31jIIRnTANvcewxkUgDk9Ih7Az4kdJHGKDvxedcuSNbsEb3Qk8wc28d21ld-cP1Lp90UWX3bqVFyPoBubXfaKUHBK0t9kArIjWy3KO1DnSEv_sTTLbzJyrXqStUvGswYF1imhCr6uLa_UyOkUKEvyy_VLFpqT0es9t5ZqT7j2drj2AYpdj5oItxura5NXRu2glZ0eW--Y4Tp6CqIJZocahLdYCepawUAPoK3Q1FzTH3_iCyrykJoRkLdISlRbWzpTjeBdyuyBATy4cdmn7_eVLyoAna4dV9XoO1OyTf_N9THYDn3CxWrp0p52Kp4d_Y"
+    ],
+    "Referer": [
+      "https://localhost:7102/"
+    ],
+    "Upgrade-Insecure-Requests": [
+      "1"
+    ],
+    "sec-ch-ua": [
+      "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\""
+    ],
+    "sec-ch-ua-mobile": [
+      "?0"
+    ],
+    "sec-ch-ua-platform": [
+      "\"Windows\""
+    ],
+    "DNT": [
+      "1"
+    ],
+    "sec-fetch-site": [
+      "same-origin"
+    ],
+    "sec-fetch-mode": [
+      "navigate"
+    ],
+    "sec-fetch-dest": [
+      "document"
+    ]
+  }
+}
+-------------------------------------------------
+
+Time: 22:21:02
+LogLevel: Error
+Code: GetProducts
+Exception: {
+  "ClientTitle": "Error",
+  "ClientMessage": "Could not establish connection.",
+  "Callback": "NONE",
+  "Handler": "NONE",
+  "Args": null,
+  "StatusCode": "GatewayTimeout",
+  "Message": "A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: TCP Provider, error: 0 - A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.)",
+  "Data": {},
+  "InnerException": null,
+  "HelpLink": null,
+  "Source": "Warehouse.Manager",
+  "HResult": -2146233088,
+  "StackTrace": "   at Warehouse.Manager.Services.DbCommandBase.ConnectionOpen()\r\n   at Warehouse.Manager.Services.DbCommandBase.GetTableResult(String stmt, List`1 parameters)\r\n   at Warehouse.Manager.Services.DbCommandBase.GetListResult[T](String stmt, List`1 parameters)\r\n   at Warehouse.Manager.Services.DbDataScopedService.GetProducts(Nullable`1 typeID, String name)"
+}
+Parameters: {
+  "ClientIPAddress": null
+}
+IPAddress: ::1
+Request: {
+  "Method": "GET",
+  "Url": "https://localhost:7102/",
+  "Path": "/",
+  "Query": [],
+  "Body": "",
+  "Form": null,
+  "Headers": {
+    "Accept": [
+      "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+    ],
+    "Host": [
+      "localhost:7102"
+    ],
+    "User-Agent": [
+      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+    ],
+    ":method": [
+      "GET"
+    ],
+    "Accept-Encoding": [
+      "gzip, deflate, br"
+    ],
+    "Accept-Language": [
+      "en-GB,en;q=0.9,bg-BG;q=0.8,bg;q=0.7,en-US;q=0.6"
+    ],
+    "Cache-Control": [
+      "max-age=0"
+    ],
+    "Cookie": [
+      ".AspNetCore.Antiforgery.1L9FrIpObnY=CfDJ8Dy3GDioeC5Iv8GnbSp3D-D7ltMsPm6Q9Qe3EE22OQEeH8ZcbZXV47e2cGQp-rxUAyxyV4wHw82LvMfzOsuLYvN4Vjd7oPw6c2d91khK5eUmda2lCi4ucdzfYdwet45fBl76Evu9wgL6w26z61LEdsc",
+      "active_session=CfDJ8Dy3GDioeC5Iv8GnbSp3D-CaPgAnbGsRTFfkgq0lsO94xcGOJeRWRZV2LUXqgS2uAicCdgMUMBRy_F3wCJBLfloH7rj-vz3Q224yIeS1i527qvtAE3OftteQHh5J_4oDD5W-onkDiDz4wRiHum1w6jonhxsgjViusGZianc58eODfAihJKJbexvymRLOqK5M_KH6tIOEt9fdm8YLXENz5ael31jIIRnTANvcewxkUgDk9Ih7Az4kdJHGKDvxedcuSNbsEb3Qk8wc28d21ld-cP1Lp90UWX3bqVFyPoBubXfaKUHBK0t9kArIjWy3KO1DnSEv_sTTLbzJyrXqStUvGswYF1imhCr6uLa_UyOkUKEvyy_VLFpqT0es9t5ZqT7j2drj2AYpdj5oItxura5NXRu2glZ0eW--Y4Tp6CqIJZocahLdYCepawUAPoK3Q1FzTH3_iCyrykJoRkLdISlRbWzpTjeBdyuyBATy4cdmn7_eVLyoAna4dV9XoO1OyTf_N9THYDn3CxWrp0p52Kp4d_Y"
+    ],
+    "Referer": [
+      "https://localhost:7102/"
+    ],
+    "Upgrade-Insecure-Requests": [
+      "1"
+    ],
+    "sec-ch-ua": [
+      "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\""
+    ],
+    "sec-ch-ua-mobile": [
+      "?0"
+    ],
+    "sec-ch-ua-platform": [
+      "\"Windows\""
+    ],
+    "DNT": [
+      "1"
+    ],
+    "sec-fetch-site": [
+      "same-origin"
+    ],
+    "sec-fetch-mode": [
+      "navigate"
+    ],
+    "sec-fetch-dest": [
+      "document"
+    ]
+  }
+}
+-------------------------------------------------
+
+Time: 22:22:23
+LogLevel: Error
+Code: GetProducts
+Exception: {
+  "ClientTitle": "Error",
+  "ClientMessage": "Could not establish connection.",
+  "Callback": "NONE",
+  "Handler": "NONE",
+  "Args": null,
+  "StatusCode": "GatewayTimeout",
+  "Message": "A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: TCP Provider, error: 0 - A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.)",
+  "Data": {},
+  "InnerException": null,
+  "HelpLink": null,
+  "Source": "Warehouse.Manager",
+  "HResult": -2146233088,
+  "StackTrace": "   at Warehouse.Manager.Services.DbCommandBase.ConnectionOpen()\r\n   at Warehouse.Manager.Services.DbCommandBase.GetTableResult(String stmt, List`1 parameters)\r\n   at Warehouse.Manager.Services.DbCommandBase.GetListResult[T](String stmt, List`1 parameters)\r\n   at Warehouse.Manager.Services.DbDataScopedService.GetProducts(Nullable`1 typeID, String name)"
+}
+Parameters: {
+  "ClientIPAddress": null
+}
+IPAddress: ::1
+Request: {
+  "Method": "GET",
+  "Url": "https://localhost:7102/",
+  "Path": "/",
+  "Query": [],
+  "Body": "",
+  "Form": null,
+  "Headers": {
+    "Accept": [
+      "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+    ],
+    "Host": [
+      "localhost:7102"
+    ],
+    "User-Agent": [
+      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+    ],
+    ":method": [
+      "GET"
+    ],
+    "Accept-Encoding": [
+      "gzip, deflate, br"
+    ],
+    "Accept-Language": [
+      "en-GB,en;q=0.9,bg-BG;q=0.8,bg;q=0.7,en-US;q=0.6"
+    ],
+    "Cache-Control": [
+      "max-age=0"
+    ],
+    "Cookie": [
+      ".AspNetCore.Antiforgery.1L9FrIpObnY=CfDJ8Dy3GDioeC5Iv8GnbSp3D-D7ltMsPm6Q9Qe3EE22OQEeH8ZcbZXV47e2cGQp-rxUAyxyV4wHw82LvMfzOsuLYvN4Vjd7oPw6c2d91khK5eUmda2lCi4ucdzfYdwet45fBl76Evu9wgL6w26z61LEdsc",
+      "active_session=CfDJ8Dy3GDioeC5Iv8GnbSp3D-CaPgAnbGsRTFfkgq0lsO94xcGOJeRWRZV2LUXqgS2uAicCdgMUMBRy_F3wCJBLfloH7rj-vz3Q224yIeS1i527qvtAE3OftteQHh5J_4oDD5W-onkDiDz4wRiHum1w6jonhxsgjViusGZianc58eODfAihJKJbexvymRLOqK5M_KH6tIOEt9fdm8YLXENz5ael31jIIRnTANvcewxkUgDk9Ih7Az4kdJHGKDvxedcuSNbsEb3Qk8wc28d21ld-cP1Lp90UWX3bqVFyPoBubXfaKUHBK0t9kArIjWy3KO1DnSEv_sTTLbzJyrXqStUvGswYF1imhCr6uLa_UyOkUKEvyy_VLFpqT0es9t5ZqT7j2drj2AYpdj5oItxura5NXRu2glZ0eW--Y4Tp6CqIJZocahLdYCepawUAPoK3Q1FzTH3_iCyrykJoRkLdISlRbWzpTjeBdyuyBATy4cdmn7_eVLyoAna4dV9XoO1OyTf_N9THYDn3CxWrp0p52Kp4d_Y"
+    ],
+    "Referer": [
+      "https://localhost:7102/"
+    ],
+    "Upgrade-Insecure-Requests": [
+      "1"
+    ],
+    "sec-ch-ua": [
+      "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\""
+    ],
+    "sec-ch-ua-mobile": [
+      "?0"
+    ],
+    "sec-ch-ua-platform": [
+      "\"Windows\""
+    ],
+    "DNT": [
+      "1"
+    ],
+    "sec-fetch-site": [
+      "same-origin"
+    ],
+    "sec-fetch-mode": [
+      "navigate"
+    ],
+    "sec-fetch-dest": [
+      "document"
+    ]
+  }
+}
+-------------------------------------------------
+
+Time: 22:28:26
+LogLevel: Error
+Code: GetProducts
+Exception: {
+  "ClientTitle": "Error",
+  "ClientMessage": "Could not establish connection.",
+  "Callback": "NONE",
+  "Handler": "NONE",
+  "Args": null,
+  "StatusCode": "GatewayTimeout",
+  "Message": "Could not close the connection. Current connection state is Open.",
+  "Data": {},
+  "InnerException": null,
+  "HelpLink": null,
+  "Source": "Warehouse.Manager",
+  "HResult": -2146233088,
+  "StackTrace": "   at Warehouse.Manager.Services.DbCommandBase.ConnectionClose(Boolean force)\r\n   at Warehouse.Manager.Services.DbCommandBase.GetTableResult(String stmt, List`1 parameters)\r\n   at Warehouse.Manager.Services.DbCommandBase.GetListResult[T](String stmt, List`1 parameters)\r\n   at Warehouse.Manager.Services.DbDataScopedService.GetProducts(Nullable`1 typeID, String name)"
+}
+Parameters: {
+  "ClientIPAddress": null
+}
+IPAddress: ::1
+Request: {
+  "Method": "GET",
+  "Url": "https://localhost:7102/",
+  "Path": "/",
+  "Query": [],
+  "Body": "",
+  "Form": null,
+  "Headers": {
+    "Accept": [
+      "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+    ],
+    "Host": [
+      "localhost:7102"
+    ],
+    "User-Agent": [
+      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+    ],
+    ":method": [
+      "GET"
+    ],
+    "Accept-Encoding": [
+      "gzip, deflate, br"
+    ],
+    "Accept-Language": [
+      "en-GB,en;q=0.9,bg-BG;q=0.8,bg;q=0.7,en-US;q=0.6"
+    ],
+    "Cache-Control": [
+      "max-age=0"
+    ],
+    "Cookie": [
+      ".AspNetCore.Antiforgery.1L9FrIpObnY=CfDJ8Dy3GDioeC5Iv8GnbSp3D-D7ltMsPm6Q9Qe3EE22OQEeH8ZcbZXV47e2cGQp-rxUAyxyV4wHw82LvMfzOsuLYvN4Vjd7oPw6c2d91khK5eUmda2lCi4ucdzfYdwet45fBl76Evu9wgL6w26z61LEdsc",
+      "active_session=CfDJ8Dy3GDioeC5Iv8GnbSp3D-CaPgAnbGsRTFfkgq0lsO94xcGOJeRWRZV2LUXqgS2uAicCdgMUMBRy_F3wCJBLfloH7rj-vz3Q224yIeS1i527qvtAE3OftteQHh5J_4oDD5W-onkDiDz4wRiHum1w6jonhxsgjViusGZianc58eODfAihJKJbexvymRLOqK5M_KH6tIOEt9fdm8YLXENz5ael31jIIRnTANvcewxkUgDk9Ih7Az4kdJHGKDvxedcuSNbsEb3Qk8wc28d21ld-cP1Lp90UWX3bqVFyPoBubXfaKUHBK0t9kArIjWy3KO1DnSEv_sTTLbzJyrXqStUvGswYF1imhCr6uLa_UyOkUKEvyy_VLFpqT0es9t5ZqT7j2drj2AYpdj5oItxura5NXRu2glZ0eW--Y4Tp6CqIJZocahLdYCepawUAPoK3Q1FzTH3_iCyrykJoRkLdISlRbWzpTjeBdyuyBATy4cdmn7_eVLyoAna4dV9XoO1OyTf_N9THYDn3CxWrp0p52Kp4d_Y"
+    ],
+    "Referer": [
+      "https://localhost:7102/"
+    ],
+    "Upgrade-Insecure-Requests": [
+      "1"
+    ],
+    "sec-ch-ua": [
+      "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\""
+    ],
+    "sec-ch-ua-mobile": [
+      "?0"
+    ],
+    "sec-ch-ua-platform": [
+      "\"Windows\""
+    ],
+    "DNT": [
+      "1"
+    ],
+    "sec-fetch-site": [
+      "same-origin"
+    ],
+    "sec-fetch-mode": [
+      "navigate"
+    ],
+    "sec-fetch-dest": [
+      "document"
+    ]
+  }
+}
+-------------------------------------------------
+
+Time: 22:28:27
+LogLevel: Error
+Code: 0x9000101
+Exception: {
+  "ClassName": "System.Exception",
+  "Message": "Dispose of $DbCommandBase",
+  "Data": null,
+  "InnerException": null,
+  "HelpURL": null,
+  "StackTraceString": null,
+  "RemoteStackTraceString": null,
+  "RemoteStackIndex": 0,
+  "ExceptionMethod": null,
+  "HResult": -2146233088,
+  "Source": null,
+  "WatsonBuckets": null
+}
+Parameters: {
+  "command": "",
+  "parameters": {},
+  "InTransaction": false,
+  "ConnectionOpened": true,
+  "UnauthorizedAccessAllowed": false
+}
+IPAddress: ::1
+Request: {
+  "Method": "GET",
+  "Url": "https://localhost:7102/",
+  "Path": "/",
+  "Query": [],
+  "Body": "",
+  "Form": null,
+  "Headers": {
+    "Accept": [
+      "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+    ],
+    "Host": [
+      "localhost:7102"
+    ],
+    "User-Agent": [
+      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+    ],
+    ":method": [
+      "GET"
+    ],
+    "Accept-Encoding": [
+      "gzip, deflate, br"
+    ],
+    "Accept-Language": [
+      "en-GB,en;q=0.9,bg-BG;q=0.8,bg;q=0.7,en-US;q=0.6"
+    ],
+    "Cache-Control": [
+      "max-age=0"
+    ],
+    "Cookie": [
+      ".AspNetCore.Antiforgery.1L9FrIpObnY=CfDJ8Dy3GDioeC5Iv8GnbSp3D-D7ltMsPm6Q9Qe3EE22OQEeH8ZcbZXV47e2cGQp-rxUAyxyV4wHw82LvMfzOsuLYvN4Vjd7oPw6c2d91khK5eUmda2lCi4ucdzfYdwet45fBl76Evu9wgL6w26z61LEdsc",
+      "active_session=CfDJ8Dy3GDioeC5Iv8GnbSp3D-CaPgAnbGsRTFfkgq0lsO94xcGOJeRWRZV2LUXqgS2uAicCdgMUMBRy_F3wCJBLfloH7rj-vz3Q224yIeS1i527qvtAE3OftteQHh5J_4oDD5W-onkDiDz4wRiHum1w6jonhxsgjViusGZianc58eODfAihJKJbexvymRLOqK5M_KH6tIOEt9fdm8YLXENz5ael31jIIRnTANvcewxkUgDk9Ih7Az4kdJHGKDvxedcuSNbsEb3Qk8wc28d21ld-cP1Lp90UWX3bqVFyPoBubXfaKUHBK0t9kArIjWy3KO1DnSEv_sTTLbzJyrXqStUvGswYF1imhCr6uLa_UyOkUKEvyy_VLFpqT0es9t5ZqT7j2drj2AYpdj5oItxura5NXRu2glZ0eW--Y4Tp6CqIJZocahLdYCepawUAPoK3Q1FzTH3_iCyrykJoRkLdISlRbWzpTjeBdyuyBATy4cdmn7_eVLyoAna4dV9XoO1OyTf_N9THYDn3CxWrp0p52Kp4d_Y"
+    ],
+    "Referer": [
+      "https://localhost:7102/"
+    ],
+    "Upgrade-Insecure-Requests": [
+      "1"
+    ],
+    "sec-ch-ua": [
+      "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\""
+    ],
+    "sec-ch-ua-mobile": [
+      "?0"
+    ],
+    "sec-ch-ua-platform": [
+      "\"Windows\""
+    ],
+    "DNT": [
+      "1"
+    ],
+    "sec-fetch-site": [
+      "same-origin"
+    ],
+    "sec-fetch-mode": [
+      "navigate"
+    ],
+    "sec-fetch-dest": [
+      "document"
+    ]
+  }
+}
+-------------------------------------------------
+
+Time: 22:42:02
+LogLevel: Error
+Code: GetProducts
+Exception: {
+  "ClientTitle": "Error",
+  "ClientMessage": "Could not establish connection.",
+  "Callback": "NONE",
+  "Handler": "NONE",
+  "Args": null,
+  "StatusCode": "GatewayTimeout",
+  "Message": "Could not close the connection. Current connection state is Open.",
+  "Data": {},
+  "InnerException": null,
+  "HelpLink": null,
+  "Source": "Warehouse.Manager",
+  "HResult": -2146233088,
+  "StackTrace": "   at Warehouse.Manager.Services.DbCommandBase.ConnectionClose(Boolean force)\r\n   at Warehouse.Manager.Services.DbCommandBase.GetTableResult(String stmt, List`1 parameters)\r\n   at Warehouse.Manager.Services.DbCommandBase.GetListResult[T](String stmt, List`1 parameters)\r\n   at Warehouse.Manager.Services.DbDataScopedService.GetProducts(Nullable`1 typeID, String name)"
+}
+Parameters: {
+  "ClientIPAddress": null
+}
+IPAddress: ::1
+Request: {
+  "Method": "GET",
+  "Url": "https://localhost:7102/",
+  "Path": "/",
+  "Query": [],
+  "Body": "",
+  "Form": null,
+  "Headers": {
+    "Accept": [
+      "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+    ],
+    "Host": [
+      "localhost:7102"
+    ],
+    "User-Agent": [
+      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+    ],
+    ":method": [
+      "GET"
+    ],
+    "Accept-Encoding": [
+      "gzip, deflate, br"
+    ],
+    "Accept-Language": [
+      "en-GB,en;q=0.9,bg-BG;q=0.8,bg;q=0.7,en-US;q=0.6"
+    ],
+    "Cache-Control": [
+      "max-age=0"
+    ],
+    "Cookie": [
+      ".AspNetCore.Antiforgery.1L9FrIpObnY=CfDJ8Dy3GDioeC5Iv8GnbSp3D-D7ltMsPm6Q9Qe3EE22OQEeH8ZcbZXV47e2cGQp-rxUAyxyV4wHw82LvMfzOsuLYvN4Vjd7oPw6c2d91khK5eUmda2lCi4ucdzfYdwet45fBl76Evu9wgL6w26z61LEdsc",
+      "active_session=CfDJ8Dy3GDioeC5Iv8GnbSp3D-Bz6LznYMPNGd2DHNTureIsIsuxTWlk34uqI0pT5GS09whpYd4MYHMgOa6VxJxhYi1kYxIdv00xaFyPJqUOaTeeaSaXLdm-FEFZNwOQFn1dJam-LWfhM5OOs4wl-ayoMxr7STb_WHYfl-ronqYdf3lgh93uKNSVvfGq4d9keHlDTS1A_R4_SwfG5K-O0oRi07Sn9gqd95B0scT-RRnch9OAxpgrQnRnvEknpqx6pei7q8W1k9tGpHJKzOB-ifG2w1S8H6I1U0YUeVg7zEI-R52lsj0CYMJOGiJx0eim9kx7xuoSvw6LNt-sLclrmuZT7W6u_FsROPgqzjQmYBct-PhWGYikBro_hFotSptFzQCaECwgVuQmsZ9AM5QoAPdhiPnlwVLQ-yIIORUqjrAU3IgS8kB8bo5Gx-847PxQSD55BIIxE65KRDp8jShLHGPntlT27AR2FEVdxMu0c7PHai_yp3o2LdSgjMp5utC1gWOqAbrL1ayA6eo9f9nqpWuQse8"
+    ],
+    "Referer": [
+      "https://localhost:7102/"
+    ],
+    "Upgrade-Insecure-Requests": [
+      "1"
+    ],
+    "sec-ch-ua": [
+      "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\""
+    ],
+    "sec-ch-ua-mobile": [
+      "?0"
+    ],
+    "sec-ch-ua-platform": [
+      "\"Windows\""
+    ],
+    "DNT": [
+      "1"
+    ],
+    "sec-fetch-site": [
+      "same-origin"
+    ],
+    "sec-fetch-mode": [
+      "navigate"
+    ],
+    "sec-fetch-dest": [
+      "document"
+    ]
+  }
+}
+-------------------------------------------------
+
+Time: 22:42:02
+LogLevel: Error
+Code: 0x9000101
+Exception: {
+  "ClassName": "System.Exception",
+  "Message": "Dispose of $DbCommandBase",
+  "Data": null,
+  "InnerException": null,
+  "HelpURL": null,
+  "StackTraceString": null,
+  "RemoteStackTraceString": null,
+  "RemoteStackIndex": 0,
+  "ExceptionMethod": null,
+  "HResult": -2146233088,
+  "Source": null,
+  "WatsonBuckets": null
+}
+Parameters: {
+  "command": "",
+  "parameters": {},
+  "InTransaction": false,
+  "ConnectionOpened": true,
+  "UnauthorizedAccessAllowed": false
+}
+IPAddress: ::1
+Request: {
+  "Method": "GET",
+  "Url": "https://localhost:7102/",
+  "Path": "/",
+  "Query": [],
+  "Body": "",
+  "Form": null,
+  "Headers": {
+    "Accept": [
+      "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+    ],
+    "Host": [
+      "localhost:7102"
+    ],
+    "User-Agent": [
+      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+    ],
+    ":method": [
+      "GET"
+    ],
+    "Accept-Encoding": [
+      "gzip, deflate, br"
+    ],
+    "Accept-Language": [
+      "en-GB,en;q=0.9,bg-BG;q=0.8,bg;q=0.7,en-US;q=0.6"
+    ],
+    "Cache-Control": [
+      "max-age=0"
+    ],
+    "Cookie": [
+      ".AspNetCore.Antiforgery.1L9FrIpObnY=CfDJ8Dy3GDioeC5Iv8GnbSp3D-D7ltMsPm6Q9Qe3EE22OQEeH8ZcbZXV47e2cGQp-rxUAyxyV4wHw82LvMfzOsuLYvN4Vjd7oPw6c2d91khK5eUmda2lCi4ucdzfYdwet45fBl76Evu9wgL6w26z61LEdsc",
+      "active_session=CfDJ8Dy3GDioeC5Iv8GnbSp3D-Bz6LznYMPNGd2DHNTureIsIsuxTWlk34uqI0pT5GS09whpYd4MYHMgOa6VxJxhYi1kYxIdv00xaFyPJqUOaTeeaSaXLdm-FEFZNwOQFn1dJam-LWfhM5OOs4wl-ayoMxr7STb_WHYfl-ronqYdf3lgh93uKNSVvfGq4d9keHlDTS1A_R4_SwfG5K-O0oRi07Sn9gqd95B0scT-RRnch9OAxpgrQnRnvEknpqx6pei7q8W1k9tGpHJKzOB-ifG2w1S8H6I1U0YUeVg7zEI-R52lsj0CYMJOGiJx0eim9kx7xuoSvw6LNt-sLclrmuZT7W6u_FsROPgqzjQmYBct-PhWGYikBro_hFotSptFzQCaECwgVuQmsZ9AM5QoAPdhiPnlwVLQ-yIIORUqjrAU3IgS8kB8bo5Gx-847PxQSD55BIIxE65KRDp8jShLHGPntlT27AR2FEVdxMu0c7PHai_yp3o2LdSgjMp5utC1gWOqAbrL1ayA6eo9f9nqpWuQse8"
+    ],
+    "Referer": [
+      "https://localhost:7102/"
+    ],
+    "Upgrade-Insecure-Requests": [
+      "1"
+    ],
+    "sec-ch-ua": [
+      "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\""
+    ],
+    "sec-ch-ua-mobile": [
+      "?0"
+    ],
+    "sec-ch-ua-platform": [
+      "\"Windows\""
+    ],
+    "DNT": [
+      "1"
+    ],
+    "sec-fetch-site": [
+      "same-origin"
+    ],
+    "sec-fetch-mode": [
+      "navigate"
+    ],
+    "sec-fetch-dest": [
+      "document"
+    ]
+  }
+}
+-------------------------------------------------
+
+Time: 22:42:20
+LogLevel: Error
+Code: GetProducts
+Exception: {
+  "ClientTitle": "Error",
+  "ClientMessage": "Could not establish connection.",
+  "Callback": "NONE",
+  "Handler": "NONE",
+  "Args": null,
+  "StatusCode": "GatewayTimeout",
+  "Message": "A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: TCP Provider, error: 0 - A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.)",
+  "Data": {},
+  "InnerException": null,
+  "HelpLink": null,
+  "Source": "Warehouse.Manager",
+  "HResult": -2146233088,
+  "StackTrace": "   at Warehouse.Manager.Services.DbCommandBase.ConnectionOpen()\r\n   at Warehouse.Manager.Services.DbCommandBase.GetTableResult(String stmt, List`1 parameters)\r\n   at Warehouse.Manager.Services.DbCommandBase.GetListResult[T](String stmt, List`1 parameters)\r\n   at Warehouse.Manager.Services.DbDataScopedService.GetProducts(Nullable`1 typeID, String name)"
+}
+Parameters: {
+  "ClientIPAddress": null
+}
+IPAddress: ::1
+Request: {
+  "Method": "GET",
+  "Url": "https://localhost:7102/",
+  "Path": "/",
+  "Query": [],
+  "Body": "",
+  "Form": null,
+  "Headers": {
+    "Accept": [
+      "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+    ],
+    "Host": [
+      "localhost:7102"
+    ],
+    "User-Agent": [
+      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+    ],
+    ":method": [
+      "GET"
+    ],
+    "Accept-Encoding": [
+      "gzip, deflate, br"
+    ],
+    "Accept-Language": [
+      "en-GB,en;q=0.9,bg-BG;q=0.8,bg;q=0.7,en-US;q=0.6"
+    ],
+    "Cache-Control": [
+      "max-age=0"
+    ],
+    "Cookie": [
+      ".AspNetCore.Antiforgery.1L9FrIpObnY=CfDJ8Dy3GDioeC5Iv8GnbSp3D-D7ltMsPm6Q9Qe3EE22OQEeH8ZcbZXV47e2cGQp-rxUAyxyV4wHw82LvMfzOsuLYvN4Vjd7oPw6c2d91khK5eUmda2lCi4ucdzfYdwet45fBl76Evu9wgL6w26z61LEdsc",
+      "active_session=CfDJ8Dy3GDioeC5Iv8GnbSp3D-Bz6LznYMPNGd2DHNTureIsIsuxTWlk34uqI0pT5GS09whpYd4MYHMgOa6VxJxhYi1kYxIdv00xaFyPJqUOaTeeaSaXLdm-FEFZNwOQFn1dJam-LWfhM5OOs4wl-ayoMxr7STb_WHYfl-ronqYdf3lgh93uKNSVvfGq4d9keHlDTS1A_R4_SwfG5K-O0oRi07Sn9gqd95B0scT-RRnch9OAxpgrQnRnvEknpqx6pei7q8W1k9tGpHJKzOB-ifG2w1S8H6I1U0YUeVg7zEI-R52lsj0CYMJOGiJx0eim9kx7xuoSvw6LNt-sLclrmuZT7W6u_FsROPgqzjQmYBct-PhWGYikBro_hFotSptFzQCaECwgVuQmsZ9AM5QoAPdhiPnlwVLQ-yIIORUqjrAU3IgS8kB8bo5Gx-847PxQSD55BIIxE65KRDp8jShLHGPntlT27AR2FEVdxMu0c7PHai_yp3o2LdSgjMp5utC1gWOqAbrL1ayA6eo9f9nqpWuQse8"
+    ],
+    "Referer": [
+      "https://localhost:7102/"
+    ],
+    "Upgrade-Insecure-Requests": [
+      "1"
+    ],
+    "sec-ch-ua": [
+      "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\""
+    ],
+    "sec-ch-ua-mobile": [
+      "?0"
+    ],
+    "sec-ch-ua-platform": [
+      "\"Windows\""
+    ],
+    "DNT": [
+      "1"
+    ],
+    "sec-fetch-site": [
+      "same-origin"
+    ],
+    "sec-fetch-mode": [
+      "navigate"
+    ],
+    "sec-fetch-dest": [
+      "document"
+    ]
+  }
+}
+-------------------------------------------------
+

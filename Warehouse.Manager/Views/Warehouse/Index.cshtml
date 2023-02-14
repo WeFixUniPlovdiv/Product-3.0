@@ -1,0 +1,159 @@
+﻿@model WarehouseVM
+@{
+    ViewData["Title"] = "Продукти";
+}
+<style>
+</style>
+
+<div class="container-fluid">
+    <div class="row mx-3">
+        <div class="col-md-3 p-3 rounded">
+            <form asp-action="Index" class="pt-5">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" asp-for="SearchFilter.SearchText" style="max-width:300px">
+                    <button type="submit" class="btn btn-primary">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </div>
+                <div class="input-group mb-3">
+                    <label class="input-group-text" for="TypeSelect">Категории</label>
+                    <select class="form-select" id="TypeSelect" asp-for="SearchFilter.ProductTypeSelected" style="max-width:fit-content">
+                        <option value="0">Всички</option>
+                        @foreach (var type in Model.ProductTypes)
+                        {
+                            <option value="@type.ID">@type.Name</option>
+                        }
+                    </select>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-8">
+            <div class="row d-flex justify-content-end px-3">
+                <button type="button" class="btn btn-success my-3" onclick="openProductModal(0)" id="AddProductButton" style="max-width:fit-content">
+                    Добави Продукт &ensp;<i class="bi bi-plus-square-dotted"></i>
+                </button>
+            </div>
+            <table class="table table-responsive table-light" id="ProductsTable">
+                <thead>
+                    <tr>
+                        <th />
+                        <th>@Html.DisplayNameFor(model => model.Product.pName)</th>
+                        <th>@Html.DisplayNameFor(model => model.Product.pType)</th>
+                        <th>@Html.DisplayNameFor(model => model.Product.pDesc)</th>
+                        <th style="text-align:end;">@Html.DisplayNameFor(model => model.Product.pBPrice)</th>
+                        <th style="text-align:end;">@Html.DisplayNameFor(model => model.Product.pSPrice)</th>
+                        <th style="text-align:center;">@Html.DisplayNameFor(model => model.Product.pAmount)</th>
+                        <th />
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var product in Model.Products)
+                    {
+                        <tr>
+                            <td><img class="img-thumbnail" src="data:image;base64,@System.Convert.ToBase64String(product.pImg)" style="min-width:86px" *@/></td>
+                            <td>@product.pName</td>
+                            <td>@product.pType</td>
+                            <td>@product.pDesc</td>
+                            <td align="right">@product.pBPrice</td>
+                            <td align="right">@product.pSPrice</td>
+                            <td align="center">@product.pAmount</td>
+                            <td>
+                                <div class="btn-group">
+                                    <button id="btn-edit" type="button" class="btn btn-success" onclick="openProductModal(@product.pID)">Редакция</button>
+                                    <button id="btn-del" type="button" class="btn btn-danger" onclick="deleteClicked('@product.pID','@product.pName')">Изтриване</button>
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- Modal CREATE -->
+    <div class="modal fade" id="CreateProductModal" tabindex="-1" aria-labelledby="Добавяне на продукт" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-info">
+                    <h1 class="modal-title fs-5 text-light" id="add-title">Добавяне на продукт</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Затвори"></button>
+                </div>
+                <form method="post" asp-action="AddProduct">
+                    <div id="add-div"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Modal UPDATE -->
+    <div class="modal fade" id="UpdateProductModal" tabindex="-1" aria-labelledby="Додавяне на продукт" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-info">
+                    <h1 class="modal-title fs-5 text-light">Редакция на продукт</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Затвори"></button>
+                </div>
+                <form method="post" asp-action="UpdateProduct">
+                    <div id="update-div"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Modal DELETE -->
+    <div class="modal fade" id="DeleteProductModal" tabindex="-1" aria-labelledby="Изтриване на продукт" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-danger">
+                    <h1 class="modal-title fs-5 text-light" id="delete-title"></h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Затвори"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Този продукт ще бъде изтрит! Желаете ли да продължите?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Не</button>
+                    <button type="button" class="btn btn-danger" onclick="$('#delete-btn').click();">Да</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <form asp-action="RemoveProduct" hidden>
+        <input type="number" asp-for="Product.pID" id="delete-input" hidden />
+        <button type="submit" id="delete-btn" hidden />
+    </form>
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#TypeSelect').val('@Model.SearchFilter.ProductTypeSelected');
+        if ('@Html.Raw(Model.AddProductSelected)' == "True") {
+            $('#AddProductButton').click();
+        }
+    });
+    function openProductModal(id) {
+        $.ajax({
+            type: "POST",
+            url: "Warehouse/GetProductPartial",
+            data: { "id": id },
+            success: function (response) {
+                if (id == 0) {
+                    $('#CreateProductModal').find('#add-div').html(response);
+                    $('#CreateProductModal').modal('show');
+                }
+                else {
+                    $('#UpdateProductModal').find('#update-div').html(response);
+                    $('#UpdateProductModal').modal('show');
+                }
+            },
+            failure: function (response) {
+                alert(response.responseText);
+            },
+            error: function (response) {
+                alert(response.responseText);
+            }
+        })
+    }
+    function deleteClicked(id, name) {
+        $('#delete-title').text(name);
+        $('#delete-input').val(id);
+        $('#DeleteProductModal').modal('show');
+    }
+</script>

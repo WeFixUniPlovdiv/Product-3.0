@@ -1,0 +1,1475 @@
+Time: 15:52:55
+LogLevel: Error
+Code: GetProducts
+Exception: {
+  "ClientTitle": "Error",
+  "ClientMessage": "Error processing data.",
+  "Callback": "NONE",
+  "Handler": "NONE",
+  "Args": null,
+  "StatusCode": "ServiceUnavailable",
+  "Message": "{\"Message\":\"Invalid object name 'wh.T_Products'.\\r\\nCould not use view or function 'wh.V_Products' because of binding errors.\",\"Number\":208,\"Procedure\":\"V_Products\",\"LineNumber\":11}",
+  "Data": {},
+  "InnerException": null,
+  "HelpLink": null,
+  "Source": "Warehouse.Manager",
+  "HResult": -2146233088,
+  "StackTrace": "   at Warehouse.Manager.Utils.DatabaseException..ctor(SqlException sqlException) in D:\\Shared drives\\Projects\\ServerLangs_1701261030\\Warehouse.Manager\\Utils\\AppExcetion.cs:line 252\r\n   at Warehouse.Manager.Services.DbCommandBase.<>c__DisplayClass34_0.<GetTableResult>b__0(Exception _e) in D:\\Shared drives\\Projects\\ServerLangs_1701261030\\Warehouse.Manager\\Services\\DbCommandBase.cs:line 149\r\n   at Warehouse.Manager.Utils.ExceptionHelper.GetException(Exception e, Func`2 func) in D:\\Shared drives\\Projects\\ServerLangs_1701261030\\Warehouse.Manager\\Utils\\AppExcetion.cs:line 47\r\n   at Warehouse.Manager.Services.DbCommandBase.GetTableResult(String stmt, List`1 parameters) in D:\\Shared drives\\Projects\\ServerLangs_1701261030\\Warehouse.Manager\\Services\\DbCommandBase.cs:line 149\r\n   at Warehouse.Manager.Services.DbCommandBase.GetListResult[T](String stmt, List`1 parameters) in D:\\Shared drives\\Projects\\ServerLangs_1701261030\\Warehouse.Manager\\Services\\DbCommandBase.cs:line 411\r\n   at Warehouse.Manager.Services.DbDataScopedService.GetProducts(Nullable`1 typeID, String name) in D:\\Shared drives\\Projects\\ServerLangs_1701261030\\Warehouse.Manager\\Services\\DbDataScopedService.cs:line 79"
+}
+Parameters: {
+  "ClientIPAddress": null
+}
+IPAddress: ::1
+Request: {
+  "Method": "GET",
+  "Url": "https://localhost:7102/",
+  "Path": "/",
+  "Query": [],
+  "Body": "",
+  "Form": null,
+  "Headers": {
+    "Accept": [
+      "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+    ],
+    "Host": [
+      "localhost:7102"
+    ],
+    "User-Agent": [
+      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+    ],
+    ":method": [
+      "GET"
+    ],
+    "Accept-Encoding": [
+      "gzip, deflate, br"
+    ],
+    "Accept-Language": [
+      "en-GB,en;q=0.9,bg-BG;q=0.8,bg;q=0.7,en-US;q=0.6"
+    ],
+    "Cookie": [
+      ".AspNetCore.Antiforgery.1L9FrIpObnY=CfDJ8Dy3GDioeC5Iv8GnbSp3D-D7ltMsPm6Q9Qe3EE22OQEeH8ZcbZXV47e2cGQp-rxUAyxyV4wHw82LvMfzOsuLYvN4Vjd7oPw6c2d91khK5eUmda2lCi4ucdzfYdwet45fBl76Evu9wgL6w26z61LEdsc",
+      "active_session=CfDJ8Dy3GDioeC5Iv8GnbSp3D-CzyWIpboJ-oSsqV_5mI0RP5N652OxRs2fDohydjeeB3Y4plgJCNyb5MOu8-N_tob7O7H3Qx12o0THa9KpktwQxbP-7kkuEDeonXkL-f3oLGqvWoho6Tii4KFOsbId7C2W8Gdnpn5azO62pNXH6kVJ5gZjdCztz8mbOFNcvvOTAQc_XyXTG62dEMA1TDdiAbsNOUEJrbpPVQcew2ILAVfJ2zakLoJYVod-zmmAP0dhuw445vHvU5LzycB9tTKUk3Zj66iUnB4-tfVgvNZJWi5s9iv30H9thjbA4eI2sklfgu55or5uzzTM5v_g-1UEYQ8KjpdtVu9On2mehSfZdlTMgLw7XiK-vB7-M5J-PxCAUxSATLbBLmc_yWBYTaS0PjL0Q_2xoSiWeHW3tzFPrtxRnIxDQVJricHgHeIat00ctx0j2hoe0kYf-pO-CC4jHZZogD70TVzPj6HBI8V_7wt_DbQ8YwzbFt_EOSxLCcM8wT7R7PVKjq_f3ROStqCJN_dA"
+    ],
+    "Upgrade-Insecure-Requests": [
+      "1"
+    ],
+    "sec-ch-ua": [
+      "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\""
+    ],
+    "sec-ch-ua-mobile": [
+      "?0"
+    ],
+    "sec-ch-ua-platform": [
+      "\"Windows\""
+    ],
+    "DNT": [
+      "1"
+    ],
+    "sec-fetch-site": [
+      "none"
+    ],
+    "sec-fetch-mode": [
+      "navigate"
+    ],
+    "sec-fetch-user": [
+      "?1"
+    ],
+    "sec-fetch-dest": [
+      "document"
+    ]
+  }
+}
+-------------------------------------------------
+
+Time: 15:53:11
+LogLevel: Error
+Code: GetProducts
+Exception: {
+  "ClientTitle": "Error",
+  "ClientMessage": "Error processing data.",
+  "Callback": "NONE",
+  "Handler": "NONE",
+  "Args": null,
+  "StatusCode": "ServiceUnavailable",
+  "Message": "{\"Message\":\"Invalid object name 'wh.T_Products'.\\r\\nCould not use view or function 'wh.V_Products' because of binding errors.\",\"Number\":208,\"Procedure\":\"V_Products\",\"LineNumber\":11}",
+  "Data": {},
+  "InnerException": null,
+  "HelpLink": null,
+  "Source": "Warehouse.Manager",
+  "HResult": -2146233088,
+  "StackTrace": "   at Warehouse.Manager.Utils.DatabaseException..ctor(SqlException sqlException) in D:\\Shared drives\\Projects\\ServerLangs_1701261030\\Warehouse.Manager\\Utils\\AppExcetion.cs:line 252\r\n   at Warehouse.Manager.Services.DbCommandBase.<>c__DisplayClass34_0.<GetTableResult>b__0(Exception _e) in D:\\Shared drives\\Projects\\ServerLangs_1701261030\\Warehouse.Manager\\Services\\DbCommandBase.cs:line 149\r\n   at Warehouse.Manager.Utils.ExceptionHelper.GetException(Exception e, Func`2 func) in D:\\Shared drives\\Projects\\ServerLangs_1701261030\\Warehouse.Manager\\Utils\\AppExcetion.cs:line 47\r\n   at Warehouse.Manager.Services.DbCommandBase.GetTableResult(String stmt, List`1 parameters) in D:\\Shared drives\\Projects\\ServerLangs_1701261030\\Warehouse.Manager\\Services\\DbCommandBase.cs:line 149\r\n   at Warehouse.Manager.Services.DbCommandBase.GetListResult[T](String stmt, List`1 parameters) in D:\\Shared drives\\Projects\\ServerLangs_1701261030\\Warehouse.Manager\\Services\\DbCommandBase.cs:line 411\r\n   at Warehouse.Manager.Services.DbDataScopedService.GetProducts(Nullable`1 typeID, String name) in D:\\Shared drives\\Projects\\ServerLangs_1701261030\\Warehouse.Manager\\Services\\DbDataScopedService.cs:line 79"
+}
+Parameters: {
+  "ClientIPAddress": null
+}
+IPAddress: ::1
+Request: {
+  "Method": "GET",
+  "Url": "https://localhost:7102/",
+  "Path": "/",
+  "Query": [],
+  "Body": "",
+  "Form": null,
+  "Headers": {
+    "Accept": [
+      "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+    ],
+    "Host": [
+      "localhost:7102"
+    ],
+    "User-Agent": [
+      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+    ],
+    ":method": [
+      "GET"
+    ],
+    "Accept-Encoding": [
+      "gzip, deflate, br"
+    ],
+    "Accept-Language": [
+      "en-GB,en;q=0.9,bg-BG;q=0.8,bg;q=0.7,en-US;q=0.6"
+    ],
+    "Cache-Control": [
+      "max-age=0"
+    ],
+    "Cookie": [
+      ".AspNetCore.Antiforgery.1L9FrIpObnY=CfDJ8Dy3GDioeC5Iv8GnbSp3D-D7ltMsPm6Q9Qe3EE22OQEeH8ZcbZXV47e2cGQp-rxUAyxyV4wHw82LvMfzOsuLYvN4Vjd7oPw6c2d91khK5eUmda2lCi4ucdzfYdwet45fBl76Evu9wgL6w26z61LEdsc",
+      "active_session=CfDJ8Dy3GDioeC5Iv8GnbSp3D-DILJEMN0QuuMs50ry3nIjdRGA7DiNTnmT6xN6sh83x97kevysk2U0diOc2bGitcfpySNnJawhqbSzO3EBZk_1xr1-GA4Micnld8KIXRVEAwxeV8HtydJntbuf0_3MUWCVImsVkPawWDtKCqB28ZlDHEgloUHlXSRRmido0Gjfqnb4Lm9YOUAF9hvWa2HF3IhvTYI-qAh8HUjhEWHeq7-3Hci5g-il6ipMskM8_fFHF0px3r2AEuoR0KU-jcC6ZK-qSll-Y6k8TTBMpwARk5rzCIBFu-buaICVEt9nkejC0dM6jbJm9oxbaf-zy7eGkGel6zfUdOnBAuQH-8ztvkb2uMv7BGdlQ_ODypDW51so_WWcRQfQSeRskoP-V-SBiraDy_Y7A56eVep0baiSMbSKxxxlFW4Ir6eiOk9e3KtuwqmX_oUI_sJLLrkIY22f-elWe2lwjFI5KsEYNbBaoXJBypqmuLLk1L13aWmn5BS4lamQmnf0ITMhTKOdHLW9U5ls"
+    ],
+    "Upgrade-Insecure-Requests": [
+      "1"
+    ],
+    "sec-ch-ua": [
+      "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\""
+    ],
+    "sec-ch-ua-mobile": [
+      "?0"
+    ],
+    "sec-ch-ua-platform": [
+      "\"Windows\""
+    ],
+    "DNT": [
+      "1"
+    ],
+    "sec-fetch-site": [
+      "none"
+    ],
+    "sec-fetch-mode": [
+      "navigate"
+    ],
+    "sec-fetch-user": [
+      "?1"
+    ],
+    "sec-fetch-dest": [
+      "document"
+    ]
+  }
+}
+-------------------------------------------------
+
+Time: 15:53:19
+LogLevel: Error
+Code: GetProducts
+Exception: {
+  "ClientTitle": "Error",
+  "ClientMessage": "Error processing data.",
+  "Callback": "NONE",
+  "Handler": "NONE",
+  "Args": null,
+  "StatusCode": "ServiceUnavailable",
+  "Message": "{\"Message\":\"Invalid object name 'wh.T_Products'.\\r\\nCould not use view or function 'wh.V_Products' because of binding errors.\",\"Number\":208,\"Procedure\":\"V_Products\",\"LineNumber\":11}",
+  "Data": {},
+  "InnerException": null,
+  "HelpLink": null,
+  "Source": "Warehouse.Manager",
+  "HResult": -2146233088,
+  "StackTrace": "   at Warehouse.Manager.Utils.DatabaseException..ctor(SqlException sqlException) in D:\\Shared drives\\Projects\\ServerLangs_1701261030\\Warehouse.Manager\\Utils\\AppExcetion.cs:line 252\r\n   at Warehouse.Manager.Services.DbCommandBase.<>c__DisplayClass34_0.<GetTableResult>b__0(Exception _e) in D:\\Shared drives\\Projects\\ServerLangs_1701261030\\Warehouse.Manager\\Services\\DbCommandBase.cs:line 149\r\n   at Warehouse.Manager.Utils.ExceptionHelper.GetException(Exception e, Func`2 func) in D:\\Shared drives\\Projects\\ServerLangs_1701261030\\Warehouse.Manager\\Utils\\AppExcetion.cs:line 47\r\n   at Warehouse.Manager.Services.DbCommandBase.GetTableResult(String stmt, List`1 parameters) in D:\\Shared drives\\Projects\\ServerLangs_1701261030\\Warehouse.Manager\\Services\\DbCommandBase.cs:line 149\r\n   at Warehouse.Manager.Services.DbCommandBase.GetListResult[T](String stmt, List`1 parameters) in D:\\Shared drives\\Projects\\ServerLangs_1701261030\\Warehouse.Manager\\Services\\DbCommandBase.cs:line 411\r\n   at Warehouse.Manager.Services.DbDataScopedService.GetProducts(Nullable`1 typeID, String name) in D:\\Shared drives\\Projects\\ServerLangs_1701261030\\Warehouse.Manager\\Services\\DbDataScopedService.cs:line 79"
+}
+Parameters: {
+  "ClientIPAddress": null
+}
+IPAddress: ::1
+Request: {
+  "Method": "GET",
+  "Url": "https://localhost:7102/",
+  "Path": "/",
+  "Query": [],
+  "Body": "",
+  "Form": null,
+  "Headers": {
+    "Accept": [
+      "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+    ],
+    "Host": [
+      "localhost:7102"
+    ],
+    "User-Agent": [
+      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+    ],
+    ":method": [
+      "GET"
+    ],
+    "Accept-Encoding": [
+      "gzip, deflate, br"
+    ],
+    "Accept-Language": [
+      "en-GB,en;q=0.9,bg-BG;q=0.8,bg;q=0.7,en-US;q=0.6"
+    ],
+    "Cookie": [
+      ".AspNetCore.Antiforgery.1L9FrIpObnY=CfDJ8Dy3GDioeC5Iv8GnbSp3D-D7ltMsPm6Q9Qe3EE22OQEeH8ZcbZXV47e2cGQp-rxUAyxyV4wHw82LvMfzOsuLYvN4Vjd7oPw6c2d91khK5eUmda2lCi4ucdzfYdwet45fBl76Evu9wgL6w26z61LEdsc",
+      "active_session=CfDJ8Dy3GDioeC5Iv8GnbSp3D-DILJEMN0QuuMs50ry3nIjdRGA7DiNTnmT6xN6sh83x97kevysk2U0diOc2bGitcfpySNnJawhqbSzO3EBZk_1xr1-GA4Micnld8KIXRVEAwxeV8HtydJntbuf0_3MUWCVImsVkPawWDtKCqB28ZlDHEgloUHlXSRRmido0Gjfqnb4Lm9YOUAF9hvWa2HF3IhvTYI-qAh8HUjhEWHeq7-3Hci5g-il6ipMskM8_fFHF0px3r2AEuoR0KU-jcC6ZK-qSll-Y6k8TTBMpwARk5rzCIBFu-buaICVEt9nkejC0dM6jbJm9oxbaf-zy7eGkGel6zfUdOnBAuQH-8ztvkb2uMv7BGdlQ_ODypDW51so_WWcRQfQSeRskoP-V-SBiraDy_Y7A56eVep0baiSMbSKxxxlFW4Ir6eiOk9e3KtuwqmX_oUI_sJLLrkIY22f-elWe2lwjFI5KsEYNbBaoXJBypqmuLLk1L13aWmn5BS4lamQmnf0ITMhTKOdHLW9U5ls"
+    ],
+    "Upgrade-Insecure-Requests": [
+      "1"
+    ],
+    "sec-ch-ua": [
+      "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\""
+    ],
+    "sec-ch-ua-mobile": [
+      "?0"
+    ],
+    "sec-ch-ua-platform": [
+      "\"Windows\""
+    ],
+    "DNT": [
+      "1"
+    ],
+    "sec-fetch-site": [
+      "none"
+    ],
+    "sec-fetch-mode": [
+      "navigate"
+    ],
+    "sec-fetch-user": [
+      "?1"
+    ],
+    "sec-fetch-dest": [
+      "document"
+    ]
+  }
+}
+-------------------------------------------------
+
+Time: 16:25:20
+LogLevel: Error
+Code: GetProducts
+Exception: {
+  "ClientTitle": "Error",
+  "ClientMessage": "Could not establish connection.",
+  "Callback": "NONE",
+  "Handler": "NONE",
+  "Args": null,
+  "StatusCode": "GatewayTimeout",
+  "Message": "A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: TCP Provider, error: 0 - A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.)",
+  "Data": {},
+  "InnerException": null,
+  "HelpLink": null,
+  "Source": "Warehouse.Manager",
+  "HResult": -2146233088,
+  "StackTrace": "   at Warehouse.Manager.Services.DbCommandBase.ConnectionOpen() in D:\\Shared drives\\Projects\\ServerLangs_1701261030\\Warehouse.Manager\\Services\\DbCommandBase.cs:line 71\r\n   at Warehouse.Manager.Services.DbCommandBase.GetTableResult(String stmt, List`1 parameters) in D:\\Shared drives\\Projects\\ServerLangs_1701261030\\Warehouse.Manager\\Services\\DbCommandBase.cs:line 139\r\n   at Warehouse.Manager.Services.DbCommandBase.GetListResult[T](String stmt, List`1 parameters) in D:\\Shared drives\\Projects\\ServerLangs_1701261030\\Warehouse.Manager\\Services\\DbCommandBase.cs:line 411\r\n   at Warehouse.Manager.Services.DbDataScopedService.GetProducts(Nullable`1 typeID, String name) in D:\\Shared drives\\Projects\\ServerLangs_1701261030\\Warehouse.Manager\\Services\\DbDataScopedService.cs:line 79"
+}
+Parameters: {
+  "ClientIPAddress": null
+}
+IPAddress: ::1
+Request: {
+  "Method": "GET",
+  "Url": "https://localhost:7102/",
+  "Path": "/",
+  "Query": [],
+  "Body": "",
+  "Form": null,
+  "Headers": {
+    "Accept": [
+      "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+    ],
+    "Host": [
+      "localhost:7102"
+    ],
+    "User-Agent": [
+      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+    ],
+    ":method": [
+      "GET"
+    ],
+    "Accept-Encoding": [
+      "gzip, deflate, br"
+    ],
+    "Accept-Language": [
+      "en-GB,en;q=0.9,bg-BG;q=0.8,bg;q=0.7,en-US;q=0.6"
+    ],
+    "Cookie": [
+      ".AspNetCore.Antiforgery.1L9FrIpObnY=CfDJ8Dy3GDioeC5Iv8GnbSp3D-D7ltMsPm6Q9Qe3EE22OQEeH8ZcbZXV47e2cGQp-rxUAyxyV4wHw82LvMfzOsuLYvN4Vjd7oPw6c2d91khK5eUmda2lCi4ucdzfYdwet45fBl76Evu9wgL6w26z61LEdsc",
+      "active_session=CfDJ8Dy3GDioeC5Iv8GnbSp3D-C6VGmzYmCek8C7Bc1IsBMQGeBVjLCoBJH0YwiakhpB4ounQMWj_XVwu1xqmpUJ6m8Q6cvcViEo32KW0rakNp_R-fLOr_vJtQoSaiR5mGAxd3tto0D2_CTlyEF6jKZ3ViNW1xQLX3vl8Z-9qM2ISK8eNaQ5MosVJ-XDhyIUnWapo6UQNZoQ0Gy42Q2vq1C58rHxHC-uc8joy1PKB6FBZirlKjEfbOIac3oP9ULfIBRfjIloz5bqKYKhYst4Zcd1BYnRkhulQ17-K9vmQLopnBH-yoUx5x1ZVS4KYOXFJ6UV7MjKmlwNpMNQoUQAofRmbbhfOoOpEq9hrs8BEdp14G94XYwYOkGZxpc_xbRVuj64fd0L9OmrNzSwMDAytRNmdZg0p-Ly8KC_I3PUbaGS1ZvSVK7_ccwupRjYZOlw8r5BCs2RZ_ubwbks-zukMZkVbjj9EKOFKbFavzF-M81PxXowNyitYcC9kMk7qtJ-5_SfTxRoOxNpQhnZl3IdhWyXQD4"
+    ],
+    "Upgrade-Insecure-Requests": [
+      "1"
+    ],
+    "sec-ch-ua": [
+      "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\""
+    ],
+    "sec-ch-ua-mobile": [
+      "?0"
+    ],
+    "sec-ch-ua-platform": [
+      "\"Windows\""
+    ],
+    "DNT": [
+      "1"
+    ],
+    "sec-fetch-site": [
+      "none"
+    ],
+    "sec-fetch-mode": [
+      "navigate"
+    ],
+    "sec-fetch-user": [
+      "?1"
+    ],
+    "sec-fetch-dest": [
+      "document"
+    ]
+  }
+}
+-------------------------------------------------
+
+Time: 17:38:57
+LogLevel: Error
+Code: 0x9000101
+Exception: {
+  "ClassName": "System.Exception",
+  "Message": "Dispose of $DbCommandBase",
+  "Data": null,
+  "InnerException": null,
+  "HelpURL": null,
+  "StackTraceString": null,
+  "RemoteStackTraceString": null,
+  "RemoteStackIndex": 0,
+  "ExceptionMethod": null,
+  "HResult": -2146233088,
+  "Source": null,
+  "WatsonBuckets": null
+}
+Parameters: {
+  "command": "wh.SP_AddProduct",
+  "parameters": {
+    "@pTypeId": {
+      "Value": 3,
+      "SqlDbType": "Int"
+    },
+    "@pName": {
+      "Value": "Тухли",
+      "SqlDbType": "NVarChar"
+    },
+    "@pDescription": {
+      "Value": "Червени - Големи. Цена на бройка;",
+      "SqlDbType": "NVarChar"
+    },
+    "@pImageB64": {
+      "Value": null,
+      "SqlDbType": "NVarChar"
+    },
+    "@pBoughtPrice": {
+      "Value": 1.05,
+      "SqlDbType": "Float"
+    },
+    "@pSellPrice": {
+      "Value": 2.99,
+      "SqlDbType": "Float"
+    },
+    "@pAmount": {
+      "Value": 5000,
+      "SqlDbType": "Int"
+    },
+    "Parameter1": {
+      "Value": null,
+      "SqlDbType": "NVarChar"
+    }
+  },
+  "InTransaction": true,
+  "ConnectionOpened": false,
+  "UnauthorizedAccessAllowed": false
+}
+IPAddress: ::1
+Request: {
+  "Method": "POST",
+  "Url": "https://localhost:7102/Warehouse/AddProduct",
+  "Path": "/Warehouse/AddProduct",
+  "Query": [],
+  "Body": "",
+  "Form": {
+    "AddProductSelected": "true,false",
+    "Product.pName": "Тухли",
+    "Product.pType": "3",
+    "Product.pDesc": "Червени - Големи. Цена на бройка;",
+    "Product.pBPrice": "1.05",
+    "Product.pSPrice": "2.99",
+    "Product.pAmount": "5000",
+    "Product.pImg": "",
+    "__RequestVerificationToken": "CfDJ8Dy3GDioeC5Iv8GnbSp3D-AX-DJwZdla-AzlIKo1m-pJLPt-OZcgrK5C__B9Cqj1lIJvViNai2y3YBFQqfW0hWYmjPuAxJ9f_TBZxCXZtsBMf793xceFk8MCvIpvSq6-d9L3NfSnU3mcpmxcs_W-GI7qDYYLeEPScfWxlQ-qdEtGL01K8vzn2btmVSKw-p3u4g"
+  },
+  "Headers": {
+    "Accept": [
+      "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+    ],
+    "Host": [
+      "localhost:7102"
+    ],
+    "User-Agent": [
+      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+    ],
+    ":method": [
+      "POST"
+    ],
+    "Accept-Encoding": [
+      "gzip, deflate, br"
+    ],
+    "Accept-Language": [
+      "en-GB,en;q=0.9,bg-BG;q=0.8,bg;q=0.7,en-US;q=0.6"
+    ],
+    "Cache-Control": [
+      "max-age=0"
+    ],
+    "Content-Type": [
+      "application/x-www-form-urlencoded"
+    ],
+    "Cookie": [
+      ".AspNetCore.Antiforgery.1L9FrIpObnY=CfDJ8Dy3GDioeC5Iv8GnbSp3D-D7ltMsPm6Q9Qe3EE22OQEeH8ZcbZXV47e2cGQp-rxUAyxyV4wHw82LvMfzOsuLYvN4Vjd7oPw6c2d91khK5eUmda2lCi4ucdzfYdwet45fBl76Evu9wgL6w26z61LEdsc",
+      "active_session=CfDJ8Dy3GDioeC5Iv8GnbSp3D-Daa4DXf6ZPjnSR2iIeyhqSrW4mKM47Y2s15o4hr2yPYkyX_AGmFclDJR9Mqyl2dCQkw-NpCOAN7sKldfCFd-adQz-W0sOROUPouSA0TjTHpJw6zFoq2YQOAWkkhRi_dsPv5hGs4Vsh0mHkDhlaNmIfCpGjjxqXNoGkFx-QvOZJHw4lWYkAH6jXk5LiIW1JpNLqEtRNZogpObM0BRLmWyIp5HOBAOn0IErASPSWdIjZuzl3Qu7segGXF8LMO6O-Ar-dAdjNaLQYf3CCdHJd6KOPV8MAwQnQNmKkGEOzXCBwjJfQYp19gKNq17L_I0x9d9OQIKue0dYOvS2jTWQ9AGI7OoutFZe6f40cnwfsmrsTwU__V2AstO7w3O3loTKXCjJZfjzEtZ9JoqbsYF358RcQFVtm6FRJIyydv5EAYM4VhG6zY6GuRQy44bh_WdRWclL0J-h_lmsKhM5i18iSzTPuI_fIHMyQyBHLhyaAAtT92WrD6FnvmmEXCM2_318C4Ww"
+    ],
+    "Origin": [
+      "https://localhost:7102"
+    ],
+    "Referer": [
+      "https://localhost:7102/"
+    ],
+    "Upgrade-Insecure-Requests": [
+      "1"
+    ],
+    "Content-Length": [
+      "587"
+    ],
+    "sec-ch-ua": [
+      "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\""
+    ],
+    "sec-ch-ua-mobile": [
+      "?0"
+    ],
+    "sec-ch-ua-platform": [
+      "\"Windows\""
+    ],
+    "DNT": [
+      "1"
+    ],
+    "sec-fetch-site": [
+      "same-origin"
+    ],
+    "sec-fetch-mode": [
+      "navigate"
+    ],
+    "sec-fetch-user": [
+      "?1"
+    ],
+    "sec-fetch-dest": [
+      "document"
+    ]
+  }
+}
+-------------------------------------------------
+
+Time: 17:48:34
+LogLevel: Error
+Code: 0x9000101
+Exception: {
+  "ClassName": "System.Exception",
+  "Message": "Dispose of $DbCommandBase",
+  "Data": null,
+  "InnerException": null,
+  "HelpURL": null,
+  "StackTraceString": null,
+  "RemoteStackTraceString": null,
+  "RemoteStackIndex": 0,
+  "ExceptionMethod": null,
+  "HResult": -2146233088,
+  "Source": null,
+  "WatsonBuckets": null
+}
+Parameters: {
+  "command": "wh.SP_AddProduct",
+  "parameters": {
+    "@pTypeId": {
+      "Value": 2,
+      "SqlDbType": "Int"
+    },
+    "@pName": {
+      "Value": "авдавдав",
+      "SqlDbType": "NVarChar"
+    },
+    "@pDescription": {
+      "Value": "адвсдадав",
+      "SqlDbType": "NVarChar"
+    },
+    "@pImageB64": {
+      "Value": null,
+      "SqlDbType": "NVarChar"
+    },
+    "@pBoughtPrice": {
+      "Value": 0.02,
+      "SqlDbType": "Float"
+    },
+    "@pSellPrice": {
+      "Value": 0.05,
+      "SqlDbType": "Float"
+    },
+    "@pAmount": {
+      "Value": 4561,
+      "SqlDbType": "Int"
+    },
+    "Parameter1": {
+      "Value": null,
+      "SqlDbType": "NVarChar"
+    }
+  },
+  "InTransaction": true,
+  "ConnectionOpened": false,
+  "UnauthorizedAccessAllowed": false
+}
+IPAddress: ::1
+Request: {
+  "Method": "POST",
+  "Url": "https://localhost:7102/Warehouse/AddProduct",
+  "Path": "/Warehouse/AddProduct",
+  "Query": [],
+  "Body": "",
+  "Form": {
+    "AddProductSelected": "true,false",
+    "Product.pName": "авдавдав",
+    "Product.pType": "2",
+    "Product.pDesc": "адвсдадав",
+    "Product.pBPrice": "0.02",
+    "Product.pSPrice": "0.05",
+    "Product.pAmount": "4561",
+    "Product.pImg": "",
+    "__RequestVerificationToken": "CfDJ8Dy3GDioeC5Iv8GnbSp3D-DwW3XVoLd0QdwdAQNYRIHYfJxbl3blUYZRN_7swFY3ry1VnbNIc4pj5YHfcaEIojgInt5MJjXe_dp0DfNz7hDBOSvccdSOZmGnge70qMg7p0ViQvivd56lEPef98SEcrh1QwKIPJZYeZ6HSb6Qxfynq94-OChGLS9vMfDf3BL41A"
+  },
+  "Headers": {
+    "Accept": [
+      "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+    ],
+    "Host": [
+      "localhost:7102"
+    ],
+    "User-Agent": [
+      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+    ],
+    ":method": [
+      "POST"
+    ],
+    "Accept-Encoding": [
+      "gzip, deflate, br"
+    ],
+    "Accept-Language": [
+      "en-GB,en;q=0.9,bg-BG;q=0.8,bg;q=0.7,en-US;q=0.6"
+    ],
+    "Cache-Control": [
+      "max-age=0"
+    ],
+    "Content-Type": [
+      "application/x-www-form-urlencoded"
+    ],
+    "Cookie": [
+      ".AspNetCore.Antiforgery.1L9FrIpObnY=CfDJ8Dy3GDioeC5Iv8GnbSp3D-D7ltMsPm6Q9Qe3EE22OQEeH8ZcbZXV47e2cGQp-rxUAyxyV4wHw82LvMfzOsuLYvN4Vjd7oPw6c2d91khK5eUmda2lCi4ucdzfYdwet45fBl76Evu9wgL6w26z61LEdsc",
+      "active_session=CfDJ8Dy3GDioeC5Iv8GnbSp3D-Awhw6iXhsbKds2HNXkKxIHyUw5kTNssXu24D4AXNVVFtkvS-axthxDNOWFCTyN1753O9r0d92X7B3KCc_IFevMdK6uhsEu-xuezGVV2jlHskypWfHwQvyEQOJDgLKltJ1buaVt5UdZbsyOWnThtR3WR5zx3hQrb2ZZJezo1F0DyrRSX2SNCjygrHuTl8CRWnVbPM0JWQOonatf9EYXZNHORd6XbAE7-9WiVzNifWOyPeSkUs8BT4szUCj3Gk4SzQd8TdrbPTBvVHKEvDL5UNXQdyBNIbcYoF-12l1g9NUNMJj2RscPOX9WtXn0oWSRJ8yxp36J9EOCbve0Ls6yb4EVtvPeFXpy4NlmKkJH3kgjoL0Pe61Wx4qLT0tlo8q6Wkehc8AqsA4PQyQEbDsAe74cTT-e6HOcUFcGG79CYFfDb176oFHMQVxw8RUB7SdCNFInxMMXXlojsS_X3Ra5HYH5sbxR3RBm-xlRCT220RHPAq0eYaj4C5VXOz8NQnhzKWg"
+    ],
+    "Origin": [
+      "https://localhost:7102"
+    ],
+    "Referer": [
+      "https://localhost:7102/"
+    ],
+    "Upgrade-Insecure-Requests": [
+      "1"
+    ],
+    "Content-Length": [
+      "499"
+    ],
+    "sec-ch-ua": [
+      "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\""
+    ],
+    "sec-ch-ua-mobile": [
+      "?0"
+    ],
+    "sec-ch-ua-platform": [
+      "\"Windows\""
+    ],
+    "DNT": [
+      "1"
+    ],
+    "sec-fetch-site": [
+      "same-origin"
+    ],
+    "sec-fetch-mode": [
+      "navigate"
+    ],
+    "sec-fetch-user": [
+      "?1"
+    ],
+    "sec-fetch-dest": [
+      "document"
+    ]
+  }
+}
+-------------------------------------------------
+
+Time: 17:51:40
+LogLevel: Error
+Code: GetProducts
+Exception: {
+  "ClientTitle": "Error",
+  "ClientMessage": "Server operational error.",
+  "Callback": "NONE",
+  "Handler": "NONE",
+  "Args": null,
+  "StatusCode": "ExpectationFailed",
+  "Message": "Could not convert string to integer: Канцеларски материали. Path 'pType', line 1, position 40.",
+  "Data": {},
+  "InnerException": null,
+  "HelpLink": null,
+  "Source": "Warehouse.Manager",
+  "HResult": -2146233088,
+  "StackTrace": "   at Warehouse.Manager.Utils.JsonHelper.DataTableToList[T](DataTable dt) in D:\\Shared drives\\Projects\\ServerLangs_1701261030\\Warehouse.Manager\\Utils\\JsonHelper.cs:line 115\r\n   at Warehouse.Manager.Services.DbCommandBase.GetListResult[T](String stmt, List`1 parameters) in D:\\Shared drives\\Projects\\ServerLangs_1701261030\\Warehouse.Manager\\Services\\DbCommandBase.cs:line 411\r\n   at Warehouse.Manager.Services.DbDataScopedService.GetProducts(Nullable`1 typeID, String name) in D:\\Shared drives\\Projects\\ServerLangs_1701261030\\Warehouse.Manager\\Services\\DbDataScopedService.cs:line 79"
+}
+Parameters: {
+  "ClientIPAddress": null
+}
+IPAddress: ::1
+Request: {
+  "Method": "GET",
+  "Url": "https://localhost:7102/",
+  "Path": "/",
+  "Query": [],
+  "Body": "",
+  "Form": null,
+  "Headers": {
+    "Accept": [
+      "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+    ],
+    "Host": [
+      "localhost:7102"
+    ],
+    "User-Agent": [
+      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+    ],
+    ":method": [
+      "GET"
+    ],
+    "Accept-Encoding": [
+      "gzip, deflate, br"
+    ],
+    "Accept-Language": [
+      "en-GB,en;q=0.9,bg-BG;q=0.8,bg;q=0.7,en-US;q=0.6"
+    ],
+    "Cookie": [
+      ".AspNetCore.Antiforgery.1L9FrIpObnY=CfDJ8Dy3GDioeC5Iv8GnbSp3D-D7ltMsPm6Q9Qe3EE22OQEeH8ZcbZXV47e2cGQp-rxUAyxyV4wHw82LvMfzOsuLYvN4Vjd7oPw6c2d91khK5eUmda2lCi4ucdzfYdwet45fBl76Evu9wgL6w26z61LEdsc",
+      "active_session=CfDJ8Dy3GDioeC5Iv8GnbSp3D-Awhw6iXhsbKds2HNXkKxIHyUw5kTNssXu24D4AXNVVFtkvS-axthxDNOWFCTyN1753O9r0d92X7B3KCc_IFevMdK6uhsEu-xuezGVV2jlHskypWfHwQvyEQOJDgLKltJ1buaVt5UdZbsyOWnThtR3WR5zx3hQrb2ZZJezo1F0DyrRSX2SNCjygrHuTl8CRWnVbPM0JWQOonatf9EYXZNHORd6XbAE7-9WiVzNifWOyPeSkUs8BT4szUCj3Gk4SzQd8TdrbPTBvVHKEvDL5UNXQdyBNIbcYoF-12l1g9NUNMJj2RscPOX9WtXn0oWSRJ8yxp36J9EOCbve0Ls6yb4EVtvPeFXpy4NlmKkJH3kgjoL0Pe61Wx4qLT0tlo8q6Wkehc8AqsA4PQyQEbDsAe74cTT-e6HOcUFcGG79CYFfDb176oFHMQVxw8RUB7SdCNFInxMMXXlojsS_X3Ra5HYH5sbxR3RBm-xlRCT220RHPAq0eYaj4C5VXOz8NQnhzKWg"
+    ],
+    "Upgrade-Insecure-Requests": [
+      "1"
+    ],
+    "sec-ch-ua": [
+      "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\""
+    ],
+    "sec-ch-ua-mobile": [
+      "?0"
+    ],
+    "sec-ch-ua-platform": [
+      "\"Windows\""
+    ],
+    "DNT": [
+      "1"
+    ],
+    "sec-fetch-site": [
+      "none"
+    ],
+    "sec-fetch-mode": [
+      "navigate"
+    ],
+    "sec-fetch-user": [
+      "?1"
+    ],
+    "sec-fetch-dest": [
+      "document"
+    ]
+  }
+}
+-------------------------------------------------
+
+Time: 17:51:46
+LogLevel: Error
+Code: GetProducts
+Exception: {
+  "ClientTitle": "Error",
+  "ClientMessage": "Server operational error.",
+  "Callback": "NONE",
+  "Handler": "NONE",
+  "Args": null,
+  "StatusCode": "ExpectationFailed",
+  "Message": "Could not convert string to integer: Канцеларски материали. Path 'pType', line 1, position 40.",
+  "Data": {},
+  "InnerException": null,
+  "HelpLink": null,
+  "Source": "Warehouse.Manager",
+  "HResult": -2146233088,
+  "StackTrace": "   at Warehouse.Manager.Utils.JsonHelper.DataTableToList[T](DataTable dt) in D:\\Shared drives\\Projects\\ServerLangs_1701261030\\Warehouse.Manager\\Utils\\JsonHelper.cs:line 115\r\n   at Warehouse.Manager.Services.DbCommandBase.GetListResult[T](String stmt, List`1 parameters) in D:\\Shared drives\\Projects\\ServerLangs_1701261030\\Warehouse.Manager\\Services\\DbCommandBase.cs:line 411\r\n   at Warehouse.Manager.Services.DbDataScopedService.GetProducts(Nullable`1 typeID, String name) in D:\\Shared drives\\Projects\\ServerLangs_1701261030\\Warehouse.Manager\\Services\\DbDataScopedService.cs:line 79"
+}
+Parameters: {
+  "ClientIPAddress": null
+}
+IPAddress: ::1
+Request: {
+  "Method": "GET",
+  "Url": "https://localhost:7102/",
+  "Path": "/",
+  "Query": [],
+  "Body": "",
+  "Form": null,
+  "Headers": {
+    "Accept": [
+      "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+    ],
+    "Host": [
+      "localhost:7102"
+    ],
+    "User-Agent": [
+      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+    ],
+    ":method": [
+      "GET"
+    ],
+    "Accept-Encoding": [
+      "gzip, deflate, br"
+    ],
+    "Accept-Language": [
+      "en-GB,en;q=0.9,bg-BG;q=0.8,bg;q=0.7,en-US;q=0.6"
+    ],
+    "Cache-Control": [
+      "max-age=0"
+    ],
+    "Cookie": [
+      ".AspNetCore.Antiforgery.1L9FrIpObnY=CfDJ8Dy3GDioeC5Iv8GnbSp3D-D7ltMsPm6Q9Qe3EE22OQEeH8ZcbZXV47e2cGQp-rxUAyxyV4wHw82LvMfzOsuLYvN4Vjd7oPw6c2d91khK5eUmda2lCi4ucdzfYdwet45fBl76Evu9wgL6w26z61LEdsc",
+      "active_session=CfDJ8Dy3GDioeC5Iv8GnbSp3D-Awhw6iXhsbKds2HNXkKxIHyUw5kTNssXu24D4AXNVVFtkvS-axthxDNOWFCTyN1753O9r0d92X7B3KCc_IFevMdK6uhsEu-xuezGVV2jlHskypWfHwQvyEQOJDgLKltJ1buaVt5UdZbsyOWnThtR3WR5zx3hQrb2ZZJezo1F0DyrRSX2SNCjygrHuTl8CRWnVbPM0JWQOonatf9EYXZNHORd6XbAE7-9WiVzNifWOyPeSkUs8BT4szUCj3Gk4SzQd8TdrbPTBvVHKEvDL5UNXQdyBNIbcYoF-12l1g9NUNMJj2RscPOX9WtXn0oWSRJ8yxp36J9EOCbve0Ls6yb4EVtvPeFXpy4NlmKkJH3kgjoL0Pe61Wx4qLT0tlo8q6Wkehc8AqsA4PQyQEbDsAe74cTT-e6HOcUFcGG79CYFfDb176oFHMQVxw8RUB7SdCNFInxMMXXlojsS_X3Ra5HYH5sbxR3RBm-xlRCT220RHPAq0eYaj4C5VXOz8NQnhzKWg"
+    ],
+    "Upgrade-Insecure-Requests": [
+      "1"
+    ],
+    "sec-ch-ua": [
+      "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\""
+    ],
+    "sec-ch-ua-mobile": [
+      "?0"
+    ],
+    "sec-ch-ua-platform": [
+      "\"Windows\""
+    ],
+    "DNT": [
+      "1"
+    ],
+    "sec-fetch-site": [
+      "none"
+    ],
+    "sec-fetch-mode": [
+      "navigate"
+    ],
+    "sec-fetch-user": [
+      "?1"
+    ],
+    "sec-fetch-dest": [
+      "document"
+    ]
+  }
+}
+-------------------------------------------------
+
+Time: 17:51:55
+LogLevel: Error
+Code: GetProducts
+Exception: {
+  "ClientTitle": "Error",
+  "ClientMessage": "Server operational error.",
+  "Callback": "NONE",
+  "Handler": "NONE",
+  "Args": null,
+  "StatusCode": "ExpectationFailed",
+  "Message": "Could not convert string to integer: Канцеларски материали. Path 'pType', line 1, position 40.",
+  "Data": {},
+  "InnerException": null,
+  "HelpLink": null,
+  "Source": "Warehouse.Manager",
+  "HResult": -2146233088,
+  "StackTrace": "   at Warehouse.Manager.Utils.JsonHelper.DataTableToList[T](DataTable dt) in D:\\Shared drives\\Projects\\ServerLangs_1701261030\\Warehouse.Manager\\Utils\\JsonHelper.cs:line 115\r\n   at Warehouse.Manager.Services.DbCommandBase.GetListResult[T](String stmt, List`1 parameters) in D:\\Shared drives\\Projects\\ServerLangs_1701261030\\Warehouse.Manager\\Services\\DbCommandBase.cs:line 411\r\n   at Warehouse.Manager.Services.DbDataScopedService.GetProducts(Nullable`1 typeID, String name) in D:\\Shared drives\\Projects\\ServerLangs_1701261030\\Warehouse.Manager\\Services\\DbDataScopedService.cs:line 79"
+}
+Parameters: {
+  "ClientIPAddress": null
+}
+IPAddress: ::1
+Request: {
+  "Method": "GET",
+  "Url": "https://localhost:7102/",
+  "Path": "/",
+  "Query": [],
+  "Body": "",
+  "Form": null,
+  "Headers": {
+    "Accept": [
+      "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+    ],
+    "Host": [
+      "localhost:7102"
+    ],
+    "User-Agent": [
+      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+    ],
+    ":method": [
+      "GET"
+    ],
+    "Accept-Encoding": [
+      "gzip, deflate, br"
+    ],
+    "Accept-Language": [
+      "en-GB,en;q=0.9,bg-BG;q=0.8,bg;q=0.7,en-US;q=0.6"
+    ],
+    "Cache-Control": [
+      "max-age=0"
+    ],
+    "Cookie": [
+      ".AspNetCore.Antiforgery.1L9FrIpObnY=CfDJ8Dy3GDioeC5Iv8GnbSp3D-D7ltMsPm6Q9Qe3EE22OQEeH8ZcbZXV47e2cGQp-rxUAyxyV4wHw82LvMfzOsuLYvN4Vjd7oPw6c2d91khK5eUmda2lCi4ucdzfYdwet45fBl76Evu9wgL6w26z61LEdsc",
+      "active_session=CfDJ8Dy3GDioeC5Iv8GnbSp3D-Awhw6iXhsbKds2HNXkKxIHyUw5kTNssXu24D4AXNVVFtkvS-axthxDNOWFCTyN1753O9r0d92X7B3KCc_IFevMdK6uhsEu-xuezGVV2jlHskypWfHwQvyEQOJDgLKltJ1buaVt5UdZbsyOWnThtR3WR5zx3hQrb2ZZJezo1F0DyrRSX2SNCjygrHuTl8CRWnVbPM0JWQOonatf9EYXZNHORd6XbAE7-9WiVzNifWOyPeSkUs8BT4szUCj3Gk4SzQd8TdrbPTBvVHKEvDL5UNXQdyBNIbcYoF-12l1g9NUNMJj2RscPOX9WtXn0oWSRJ8yxp36J9EOCbve0Ls6yb4EVtvPeFXpy4NlmKkJH3kgjoL0Pe61Wx4qLT0tlo8q6Wkehc8AqsA4PQyQEbDsAe74cTT-e6HOcUFcGG79CYFfDb176oFHMQVxw8RUB7SdCNFInxMMXXlojsS_X3Ra5HYH5sbxR3RBm-xlRCT220RHPAq0eYaj4C5VXOz8NQnhzKWg"
+    ],
+    "Upgrade-Insecure-Requests": [
+      "1"
+    ],
+    "sec-ch-ua": [
+      "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\""
+    ],
+    "sec-ch-ua-mobile": [
+      "?0"
+    ],
+    "sec-ch-ua-platform": [
+      "\"Windows\""
+    ],
+    "DNT": [
+      "1"
+    ],
+    "sec-fetch-site": [
+      "none"
+    ],
+    "sec-fetch-mode": [
+      "navigate"
+    ],
+    "sec-fetch-user": [
+      "?1"
+    ],
+    "sec-fetch-dest": [
+      "document"
+    ]
+  }
+}
+-------------------------------------------------
+
+Time: 17:52:38
+LogLevel: Error
+Code: GetProducts
+Exception: {
+  "ClientTitle": "Error",
+  "ClientMessage": "Server operational error.",
+  "Callback": "NONE",
+  "Handler": "NONE",
+  "Args": null,
+  "StatusCode": "ExpectationFailed",
+  "Message": "Could not convert string to integer: Канцеларски материали. Path 'pType', line 1, position 40.",
+  "Data": {},
+  "InnerException": null,
+  "HelpLink": null,
+  "Source": "Warehouse.Manager",
+  "HResult": -2146233088,
+  "StackTrace": "   at Warehouse.Manager.Utils.JsonHelper.DataTableToList[T](DataTable dt)\r\n   at Warehouse.Manager.Services.DbCommandBase.GetListResult[T](String stmt, List`1 parameters)\r\n   at Warehouse.Manager.Services.DbDataScopedService.GetProducts(Nullable`1 typeID, String name)"
+}
+Parameters: {
+  "ClientIPAddress": null
+}
+IPAddress: ::1
+Request: {
+  "Method": "GET",
+  "Url": "https://localhost:7102/",
+  "Path": "/",
+  "Query": [],
+  "Body": "",
+  "Form": null,
+  "Headers": {
+    "Accept": [
+      "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+    ],
+    "Host": [
+      "localhost:7102"
+    ],
+    "User-Agent": [
+      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+    ],
+    ":method": [
+      "GET"
+    ],
+    "Accept-Encoding": [
+      "gzip, deflate, br"
+    ],
+    "Accept-Language": [
+      "en-GB,en;q=0.9,bg-BG;q=0.8,bg;q=0.7,en-US;q=0.6"
+    ],
+    "Cache-Control": [
+      "max-age=0"
+    ],
+    "Cookie": [
+      ".AspNetCore.Antiforgery.1L9FrIpObnY=CfDJ8Dy3GDioeC5Iv8GnbSp3D-D7ltMsPm6Q9Qe3EE22OQEeH8ZcbZXV47e2cGQp-rxUAyxyV4wHw82LvMfzOsuLYvN4Vjd7oPw6c2d91khK5eUmda2lCi4ucdzfYdwet45fBl76Evu9wgL6w26z61LEdsc",
+      "active_session=CfDJ8Dy3GDioeC5Iv8GnbSp3D-Awhw6iXhsbKds2HNXkKxIHyUw5kTNssXu24D4AXNVVFtkvS-axthxDNOWFCTyN1753O9r0d92X7B3KCc_IFevMdK6uhsEu-xuezGVV2jlHskypWfHwQvyEQOJDgLKltJ1buaVt5UdZbsyOWnThtR3WR5zx3hQrb2ZZJezo1F0DyrRSX2SNCjygrHuTl8CRWnVbPM0JWQOonatf9EYXZNHORd6XbAE7-9WiVzNifWOyPeSkUs8BT4szUCj3Gk4SzQd8TdrbPTBvVHKEvDL5UNXQdyBNIbcYoF-12l1g9NUNMJj2RscPOX9WtXn0oWSRJ8yxp36J9EOCbve0Ls6yb4EVtvPeFXpy4NlmKkJH3kgjoL0Pe61Wx4qLT0tlo8q6Wkehc8AqsA4PQyQEbDsAe74cTT-e6HOcUFcGG79CYFfDb176oFHMQVxw8RUB7SdCNFInxMMXXlojsS_X3Ra5HYH5sbxR3RBm-xlRCT220RHPAq0eYaj4C5VXOz8NQnhzKWg"
+    ],
+    "Referer": [
+      "https://localhost:7102/"
+    ],
+    "Upgrade-Insecure-Requests": [
+      "1"
+    ],
+    "sec-ch-ua": [
+      "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\""
+    ],
+    "sec-ch-ua-mobile": [
+      "?0"
+    ],
+    "sec-ch-ua-platform": [
+      "\"Windows\""
+    ],
+    "DNT": [
+      "1"
+    ],
+    "sec-fetch-site": [
+      "same-origin"
+    ],
+    "sec-fetch-mode": [
+      "navigate"
+    ],
+    "sec-fetch-dest": [
+      "document"
+    ]
+  }
+}
+-------------------------------------------------
+
+Time: 17:52:51
+LogLevel: Error
+Code: GetProducts
+Exception: {
+  "ClientTitle": "Error",
+  "ClientMessage": "Server operational error.",
+  "Callback": "NONE",
+  "Handler": "NONE",
+  "Args": null,
+  "StatusCode": "ExpectationFailed",
+  "Message": "Could not convert string to integer: Канцеларски материали. Path 'pType', line 1, position 40.",
+  "Data": {},
+  "InnerException": null,
+  "HelpLink": null,
+  "Source": "Warehouse.Manager",
+  "HResult": -2146233088,
+  "StackTrace": "   at Warehouse.Manager.Utils.JsonHelper.DataTableToList[T](DataTable dt) in D:\\Shared drives\\Projects\\ServerLangs_1701261030\\Warehouse.Manager\\Utils\\JsonHelper.cs:line 115\r\n   at Warehouse.Manager.Services.DbCommandBase.GetListResult[T](String stmt, List`1 parameters) in D:\\Shared drives\\Projects\\ServerLangs_1701261030\\Warehouse.Manager\\Services\\DbCommandBase.cs:line 411\r\n   at Warehouse.Manager.Services.DbDataScopedService.GetProducts(Nullable`1 typeID, String name) in D:\\Shared drives\\Projects\\ServerLangs_1701261030\\Warehouse.Manager\\Services\\DbDataScopedService.cs:line 79"
+}
+Parameters: {
+  "ClientIPAddress": null
+}
+IPAddress: ::1
+Request: {
+  "Method": "GET",
+  "Url": "https://localhost:7102/",
+  "Path": "/",
+  "Query": [],
+  "Body": "",
+  "Form": null,
+  "Headers": {
+    "Accept": [
+      "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+    ],
+    "Host": [
+      "localhost:7102"
+    ],
+    "User-Agent": [
+      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+    ],
+    ":method": [
+      "GET"
+    ],
+    "Accept-Encoding": [
+      "gzip, deflate, br"
+    ],
+    "Accept-Language": [
+      "en-GB,en;q=0.9,bg-BG;q=0.8,bg;q=0.7,en-US;q=0.6"
+    ],
+    "Cookie": [
+      ".AspNetCore.Antiforgery.1L9FrIpObnY=CfDJ8Dy3GDioeC5Iv8GnbSp3D-D7ltMsPm6Q9Qe3EE22OQEeH8ZcbZXV47e2cGQp-rxUAyxyV4wHw82LvMfzOsuLYvN4Vjd7oPw6c2d91khK5eUmda2lCi4ucdzfYdwet45fBl76Evu9wgL6w26z61LEdsc",
+      "active_session=CfDJ8Dy3GDioeC5Iv8GnbSp3D-Awhw6iXhsbKds2HNXkKxIHyUw5kTNssXu24D4AXNVVFtkvS-axthxDNOWFCTyN1753O9r0d92X7B3KCc_IFevMdK6uhsEu-xuezGVV2jlHskypWfHwQvyEQOJDgLKltJ1buaVt5UdZbsyOWnThtR3WR5zx3hQrb2ZZJezo1F0DyrRSX2SNCjygrHuTl8CRWnVbPM0JWQOonatf9EYXZNHORd6XbAE7-9WiVzNifWOyPeSkUs8BT4szUCj3Gk4SzQd8TdrbPTBvVHKEvDL5UNXQdyBNIbcYoF-12l1g9NUNMJj2RscPOX9WtXn0oWSRJ8yxp36J9EOCbve0Ls6yb4EVtvPeFXpy4NlmKkJH3kgjoL0Pe61Wx4qLT0tlo8q6Wkehc8AqsA4PQyQEbDsAe74cTT-e6HOcUFcGG79CYFfDb176oFHMQVxw8RUB7SdCNFInxMMXXlojsS_X3Ra5HYH5sbxR3RBm-xlRCT220RHPAq0eYaj4C5VXOz8NQnhzKWg"
+    ],
+    "Upgrade-Insecure-Requests": [
+      "1"
+    ],
+    "sec-ch-ua": [
+      "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\""
+    ],
+    "sec-ch-ua-mobile": [
+      "?0"
+    ],
+    "sec-ch-ua-platform": [
+      "\"Windows\""
+    ],
+    "DNT": [
+      "1"
+    ],
+    "sec-fetch-site": [
+      "none"
+    ],
+    "sec-fetch-mode": [
+      "navigate"
+    ],
+    "sec-fetch-user": [
+      "?1"
+    ],
+    "sec-fetch-dest": [
+      "document"
+    ]
+  }
+}
+-------------------------------------------------
+
+Time: 23:17:19
+LogLevel: Error
+Code: DeleteProduct
+Exception: {
+  "ClientTitle": "Error",
+  "ClientMessage": "Error processing data.",
+  "Callback": "NONE",
+  "Handler": "NONE",
+  "Args": null,
+  "StatusCode": "ServiceUnavailable",
+  "Message": "{\"Message\":\"Procedure or function 'SP_DeleteProduct' expects parameter '@Error', which was not supplied.\",\"Number\":201,\"Procedure\":\"wh.SP_DeleteProduct\",\"LineNumber\":0}",
+  "Data": {},
+  "InnerException": null,
+  "HelpLink": null,
+  "Source": "Warehouse.Manager",
+  "HResult": -2146233088,
+  "StackTrace": "   at Warehouse.Manager.Utils.DatabaseException..ctor(SqlException sqlException) in D:\\Shared drives\\Projects\\ServerLangs_1701261030\\Warehouse.Manager\\Utils\\AppExcetion.cs:line 252\r\n   at Warehouse.Manager.Services.DbCommandBase.<>c__DisplayClass43_0.<ExecuteNonQuery>b__0(Exception _e) in D:\\Shared drives\\Projects\\ServerLangs_1701261030\\Warehouse.Manager\\Services\\DbCommandBase.cs:line 257\r\n   at Warehouse.Manager.Utils.ExceptionHelper.GetException(Exception e, Func`2 func) in D:\\Shared drives\\Projects\\ServerLangs_1701261030\\Warehouse.Manager\\Utils\\AppExcetion.cs:line 47\r\n   at Warehouse.Manager.Services.DbCommandBase.ExecuteNonQuery(String stmt, List`1 parameters, CommandType commandType) in D:\\Shared drives\\Projects\\ServerLangs_1701261030\\Warehouse.Manager\\Services\\DbCommandBase.cs:line 257\r\n   at Warehouse.Manager.Services.DbDataScopedService.DeleteProduct(Int32 productID) in D:\\Shared drives\\Projects\\ServerLangs_1701261030\\Warehouse.Manager\\Services\\DbDataScopedService.cs:line 166"
+}
+Parameters: {
+  "ClientIPAddress": null
+}
+IPAddress: ::1
+Request: {
+  "Method": "POST",
+  "Url": "https://localhost:7102/Warehouse/RemoveProduct",
+  "Path": "/Warehouse/RemoveProduct",
+  "Query": [],
+  "Body": "",
+  "Form": {
+    "Product.pID": "1",
+    "__RequestVerificationToken": "CfDJ8Dy3GDioeC5Iv8GnbSp3D-AYdgq__lEsq_5iwqtK5OfSyQr9iy1WUOxqUdG8ny_Rlg6K-h5Abd3rFaXq-8Ce909Yq_NYjbHct4plCEkruvj5ZHFl-H1t4RfJv6LKMz9qfam2fJqXCIuxP8pa2wFy6-6Tfi5gJ7HlE6slfm1lQQQ7aesaDLQiAc7Y8kWoDeZPfg"
+  },
+  "Headers": {
+    "Accept": [
+      "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+    ],
+    "Host": [
+      "localhost:7102"
+    ],
+    "User-Agent": [
+      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+    ],
+    ":method": [
+      "POST"
+    ],
+    "Accept-Encoding": [
+      "gzip, deflate, br"
+    ],
+    "Accept-Language": [
+      "en-GB,en;q=0.9,bg-BG;q=0.8,bg;q=0.7,en-US;q=0.6"
+    ],
+    "Cache-Control": [
+      "max-age=0"
+    ],
+    "Content-Type": [
+      "application/x-www-form-urlencoded"
+    ],
+    "Cookie": [
+      ".AspNetCore.Antiforgery.1L9FrIpObnY=CfDJ8Dy3GDioeC5Iv8GnbSp3D-D7ltMsPm6Q9Qe3EE22OQEeH8ZcbZXV47e2cGQp-rxUAyxyV4wHw82LvMfzOsuLYvN4Vjd7oPw6c2d91khK5eUmda2lCi4ucdzfYdwet45fBl76Evu9wgL6w26z61LEdsc",
+      "active_session=CfDJ8Dy3GDioeC5Iv8GnbSp3D-Aln1stfwDZH-mr04pOxCqpyzV745_pgZj4heINBnzm7R5RAYlVoFHVoV6K38m73UYLkdvfXhbFYE4vdZrXlFacT10a3kOF3DpXZxHBX9sXMVTvjstx3B7DJLVjsbTueamVfWdtN21hezpyczdujshZOmhbCKH7i0P_fULl0_amynzL3Kvn7SczUotCC-vMLtNmXV2j6-wgc1wjr0D_UVDeVhL4erIr0sjYbLOtCdivihuftk1kqdMP04AptUi6wOPN_AaarEJJn__Rj8_73WdjQoHXc5jMCDTtapQo4Lfr2WnliOgLwu59wiUB3E3NTZRQQdpsEHZN6xl0fjFwUK5JR1oxvtz9G7zUqYFCVUSdJdZnRuUipNsjpzuxKG2TW9sfmWRjl38IGfjIgXLW8WU1h6gubXXjhPEudYXPI5MergVQelw33DfvLXfiXOywy_0lCt_MCQtEwIwOs0djQAYQJs6Fq7fMvf3uT6Y87wVmcAIlZOM94fq-x-4TO1EI_YE"
+    ],
+    "Origin": [
+      "https://localhost:7102"
+    ],
+    "Referer": [
+      "https://localhost:7102/"
+    ],
+    "Upgrade-Insecure-Requests": [
+      "1"
+    ],
+    "Content-Length": [
+      "239"
+    ],
+    "sec-ch-ua": [
+      "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\""
+    ],
+    "sec-ch-ua-mobile": [
+      "?0"
+    ],
+    "sec-ch-ua-platform": [
+      "\"Windows\""
+    ],
+    "DNT": [
+      "1"
+    ],
+    "sec-fetch-site": [
+      "same-origin"
+    ],
+    "sec-fetch-mode": [
+      "navigate"
+    ],
+    "sec-fetch-user": [
+      "?1"
+    ],
+    "sec-fetch-dest": [
+      "document"
+    ]
+  }
+}
+-------------------------------------------------
+
+Time: 23:17:19
+LogLevel: Error
+Code: 0x9000101
+Exception: {
+  "ClassName": "System.Exception",
+  "Message": "Dispose of $DbCommandBase",
+  "Data": null,
+  "InnerException": null,
+  "HelpURL": null,
+  "StackTraceString": null,
+  "RemoteStackTraceString": null,
+  "RemoteStackIndex": 0,
+  "ExceptionMethod": null,
+  "HResult": -2146233088,
+  "Source": null,
+  "WatsonBuckets": null
+}
+Parameters: {
+  "command": "wh.SP_DeleteProduct",
+  "parameters": {
+    "@pID": {
+      "Value": 1,
+      "SqlDbType": "Int"
+    },
+    "Parameter1": {
+      "Value": null,
+      "SqlDbType": "NVarChar"
+    }
+  },
+  "InTransaction": true,
+  "ConnectionOpened": false,
+  "UnauthorizedAccessAllowed": false
+}
+IPAddress: ::1
+Request: {
+  "Method": "POST",
+  "Url": "https://localhost:7102/Warehouse/RemoveProduct",
+  "Path": "/Warehouse/RemoveProduct",
+  "Query": [],
+  "Body": "",
+  "Form": {
+    "Product.pID": "1",
+    "__RequestVerificationToken": "CfDJ8Dy3GDioeC5Iv8GnbSp3D-AYdgq__lEsq_5iwqtK5OfSyQr9iy1WUOxqUdG8ny_Rlg6K-h5Abd3rFaXq-8Ce909Yq_NYjbHct4plCEkruvj5ZHFl-H1t4RfJv6LKMz9qfam2fJqXCIuxP8pa2wFy6-6Tfi5gJ7HlE6slfm1lQQQ7aesaDLQiAc7Y8kWoDeZPfg"
+  },
+  "Headers": {
+    "Accept": [
+      "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+    ],
+    "Host": [
+      "localhost:7102"
+    ],
+    "User-Agent": [
+      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+    ],
+    ":method": [
+      "POST"
+    ],
+    "Accept-Encoding": [
+      "gzip, deflate, br"
+    ],
+    "Accept-Language": [
+      "en-GB,en;q=0.9,bg-BG;q=0.8,bg;q=0.7,en-US;q=0.6"
+    ],
+    "Cache-Control": [
+      "max-age=0"
+    ],
+    "Content-Type": [
+      "application/x-www-form-urlencoded"
+    ],
+    "Cookie": [
+      ".AspNetCore.Antiforgery.1L9FrIpObnY=CfDJ8Dy3GDioeC5Iv8GnbSp3D-D7ltMsPm6Q9Qe3EE22OQEeH8ZcbZXV47e2cGQp-rxUAyxyV4wHw82LvMfzOsuLYvN4Vjd7oPw6c2d91khK5eUmda2lCi4ucdzfYdwet45fBl76Evu9wgL6w26z61LEdsc",
+      "active_session=CfDJ8Dy3GDioeC5Iv8GnbSp3D-Aln1stfwDZH-mr04pOxCqpyzV745_pgZj4heINBnzm7R5RAYlVoFHVoV6K38m73UYLkdvfXhbFYE4vdZrXlFacT10a3kOF3DpXZxHBX9sXMVTvjstx3B7DJLVjsbTueamVfWdtN21hezpyczdujshZOmhbCKH7i0P_fULl0_amynzL3Kvn7SczUotCC-vMLtNmXV2j6-wgc1wjr0D_UVDeVhL4erIr0sjYbLOtCdivihuftk1kqdMP04AptUi6wOPN_AaarEJJn__Rj8_73WdjQoHXc5jMCDTtapQo4Lfr2WnliOgLwu59wiUB3E3NTZRQQdpsEHZN6xl0fjFwUK5JR1oxvtz9G7zUqYFCVUSdJdZnRuUipNsjpzuxKG2TW9sfmWRjl38IGfjIgXLW8WU1h6gubXXjhPEudYXPI5MergVQelw33DfvLXfiXOywy_0lCt_MCQtEwIwOs0djQAYQJs6Fq7fMvf3uT6Y87wVmcAIlZOM94fq-x-4TO1EI_YE"
+    ],
+    "Origin": [
+      "https://localhost:7102"
+    ],
+    "Referer": [
+      "https://localhost:7102/"
+    ],
+    "Upgrade-Insecure-Requests": [
+      "1"
+    ],
+    "Content-Length": [
+      "239"
+    ],
+    "sec-ch-ua": [
+      "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\""
+    ],
+    "sec-ch-ua-mobile": [
+      "?0"
+    ],
+    "sec-ch-ua-platform": [
+      "\"Windows\""
+    ],
+    "DNT": [
+      "1"
+    ],
+    "sec-fetch-site": [
+      "same-origin"
+    ],
+    "sec-fetch-mode": [
+      "navigate"
+    ],
+    "sec-fetch-user": [
+      "?1"
+    ],
+    "sec-fetch-dest": [
+      "document"
+    ]
+  }
+}
+-------------------------------------------------
+
+Time: 23:19:04
+LogLevel: Error
+Code: DeleteProduct
+Exception: {
+  "ClientTitle": "Error",
+  "ClientMessage": "Error processing data.",
+  "Callback": "NONE",
+  "Handler": "NONE",
+  "Args": null,
+  "StatusCode": "ServiceUnavailable",
+  "Message": "{\"Message\":\"Procedure or function 'SP_DeleteProduct' expects parameter '@Error', which was not supplied.\",\"Number\":201,\"Procedure\":\"wh.SP_DeleteProduct\",\"LineNumber\":0}",
+  "Data": {},
+  "InnerException": null,
+  "HelpLink": null,
+  "Source": "Warehouse.Manager",
+  "HResult": -2146233088,
+  "StackTrace": "   at Warehouse.Manager.Utils.DatabaseException..ctor(SqlException sqlException)\r\n   at Warehouse.Manager.Services.DbCommandBase.<>c__DisplayClass43_0.<ExecuteNonQuery>b__0(Exception _e)\r\n   at Warehouse.Manager.Utils.ExceptionHelper.GetException(Exception e, Func`2 func)\r\n   at Warehouse.Manager.Services.DbCommandBase.ExecuteNonQuery(String stmt, List`1 parameters, CommandType commandType)\r\n   at Warehouse.Manager.Services.DbDataScopedService.DeleteProduct(Int32 productID)"
+}
+Parameters: {
+  "ClientIPAddress": null
+}
+IPAddress: ::1
+Request: {
+  "Method": "POST",
+  "Url": "https://localhost:7102/Warehouse/RemoveProduct",
+  "Path": "/Warehouse/RemoveProduct",
+  "Query": [],
+  "Body": "",
+  "Form": {
+    "Product.pID": "1",
+    "__RequestVerificationToken": "CfDJ8Dy3GDioeC5Iv8GnbSp3D-CpZL4IkP2CW1Ap11J7OOItt645wPfULbc7L6dT8ZyCi9GRUQOTYEKycaC38DSc0O-wvHFuUUyJEDoHKAKADTT_nyCtD_lbJiQQlbAPc80xGUqv1JRcipcR5ffIlevaLTt9-zbZLae8EphpgHsLA_jhrLOgvSxl3CAk3sViV5zuLg"
+  },
+  "Headers": {
+    "Accept": [
+      "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+    ],
+    "Host": [
+      "localhost:7102"
+    ],
+    "User-Agent": [
+      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+    ],
+    ":method": [
+      "POST"
+    ],
+    "Accept-Encoding": [
+      "gzip, deflate, br"
+    ],
+    "Accept-Language": [
+      "en-GB,en;q=0.9,bg-BG;q=0.8,bg;q=0.7,en-US;q=0.6"
+    ],
+    "Cache-Control": [
+      "max-age=0"
+    ],
+    "Content-Type": [
+      "application/x-www-form-urlencoded"
+    ],
+    "Cookie": [
+      ".AspNetCore.Antiforgery.1L9FrIpObnY=CfDJ8Dy3GDioeC5Iv8GnbSp3D-D7ltMsPm6Q9Qe3EE22OQEeH8ZcbZXV47e2cGQp-rxUAyxyV4wHw82LvMfzOsuLYvN4Vjd7oPw6c2d91khK5eUmda2lCi4ucdzfYdwet45fBl76Evu9wgL6w26z61LEdsc",
+      "active_session=CfDJ8Dy3GDioeC5Iv8GnbSp3D-Aln1stfwDZH-mr04pOxCqpyzV745_pgZj4heINBnzm7R5RAYlVoFHVoV6K38m73UYLkdvfXhbFYE4vdZrXlFacT10a3kOF3DpXZxHBX9sXMVTvjstx3B7DJLVjsbTueamVfWdtN21hezpyczdujshZOmhbCKH7i0P_fULl0_amynzL3Kvn7SczUotCC-vMLtNmXV2j6-wgc1wjr0D_UVDeVhL4erIr0sjYbLOtCdivihuftk1kqdMP04AptUi6wOPN_AaarEJJn__Rj8_73WdjQoHXc5jMCDTtapQo4Lfr2WnliOgLwu59wiUB3E3NTZRQQdpsEHZN6xl0fjFwUK5JR1oxvtz9G7zUqYFCVUSdJdZnRuUipNsjpzuxKG2TW9sfmWRjl38IGfjIgXLW8WU1h6gubXXjhPEudYXPI5MergVQelw33DfvLXfiXOywy_0lCt_MCQtEwIwOs0djQAYQJs6Fq7fMvf3uT6Y87wVmcAIlZOM94fq-x-4TO1EI_YE"
+    ],
+    "Origin": [
+      "https://localhost:7102"
+    ],
+    "Referer": [
+      "https://localhost:7102/Warehouse/Index"
+    ],
+    "Upgrade-Insecure-Requests": [
+      "1"
+    ],
+    "Content-Length": [
+      "239"
+    ],
+    "sec-ch-ua": [
+      "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\""
+    ],
+    "sec-ch-ua-mobile": [
+      "?0"
+    ],
+    "sec-ch-ua-platform": [
+      "\"Windows\""
+    ],
+    "DNT": [
+      "1"
+    ],
+    "sec-fetch-site": [
+      "same-origin"
+    ],
+    "sec-fetch-mode": [
+      "navigate"
+    ],
+    "sec-fetch-user": [
+      "?1"
+    ],
+    "sec-fetch-dest": [
+      "document"
+    ]
+  }
+}
+-------------------------------------------------
+
+Time: 23:19:06
+LogLevel: Error
+Code: 0x9000101
+Exception: {
+  "ClassName": "System.Exception",
+  "Message": "Dispose of $DbCommandBase",
+  "Data": null,
+  "InnerException": null,
+  "HelpURL": null,
+  "StackTraceString": null,
+  "RemoteStackTraceString": null,
+  "RemoteStackIndex": 0,
+  "ExceptionMethod": null,
+  "HResult": -2146233088,
+  "Source": null,
+  "WatsonBuckets": null
+}
+Parameters: {
+  "command": "wh.SP_DeleteProduct",
+  "parameters": {
+    "@pID": {
+      "Value": 1,
+      "SqlDbType": "Int"
+    },
+    "Parameter1": {
+      "Value": null,
+      "SqlDbType": "NVarChar"
+    }
+  },
+  "InTransaction": true,
+  "ConnectionOpened": false,
+  "UnauthorizedAccessAllowed": false
+}
+IPAddress: ::1
+Request: {
+  "Method": "POST",
+  "Url": "https://localhost:7102/Warehouse/RemoveProduct",
+  "Path": "/Warehouse/RemoveProduct",
+  "Query": [],
+  "Body": "",
+  "Form": {
+    "Product.pID": "1",
+    "__RequestVerificationToken": "CfDJ8Dy3GDioeC5Iv8GnbSp3D-CpZL4IkP2CW1Ap11J7OOItt645wPfULbc7L6dT8ZyCi9GRUQOTYEKycaC38DSc0O-wvHFuUUyJEDoHKAKADTT_nyCtD_lbJiQQlbAPc80xGUqv1JRcipcR5ffIlevaLTt9-zbZLae8EphpgHsLA_jhrLOgvSxl3CAk3sViV5zuLg"
+  },
+  "Headers": {
+    "Accept": [
+      "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+    ],
+    "Host": [
+      "localhost:7102"
+    ],
+    "User-Agent": [
+      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+    ],
+    ":method": [
+      "POST"
+    ],
+    "Accept-Encoding": [
+      "gzip, deflate, br"
+    ],
+    "Accept-Language": [
+      "en-GB,en;q=0.9,bg-BG;q=0.8,bg;q=0.7,en-US;q=0.6"
+    ],
+    "Cache-Control": [
+      "max-age=0"
+    ],
+    "Content-Type": [
+      "application/x-www-form-urlencoded"
+    ],
+    "Cookie": [
+      ".AspNetCore.Antiforgery.1L9FrIpObnY=CfDJ8Dy3GDioeC5Iv8GnbSp3D-D7ltMsPm6Q9Qe3EE22OQEeH8ZcbZXV47e2cGQp-rxUAyxyV4wHw82LvMfzOsuLYvN4Vjd7oPw6c2d91khK5eUmda2lCi4ucdzfYdwet45fBl76Evu9wgL6w26z61LEdsc",
+      "active_session=CfDJ8Dy3GDioeC5Iv8GnbSp3D-Aln1stfwDZH-mr04pOxCqpyzV745_pgZj4heINBnzm7R5RAYlVoFHVoV6K38m73UYLkdvfXhbFYE4vdZrXlFacT10a3kOF3DpXZxHBX9sXMVTvjstx3B7DJLVjsbTueamVfWdtN21hezpyczdujshZOmhbCKH7i0P_fULl0_amynzL3Kvn7SczUotCC-vMLtNmXV2j6-wgc1wjr0D_UVDeVhL4erIr0sjYbLOtCdivihuftk1kqdMP04AptUi6wOPN_AaarEJJn__Rj8_73WdjQoHXc5jMCDTtapQo4Lfr2WnliOgLwu59wiUB3E3NTZRQQdpsEHZN6xl0fjFwUK5JR1oxvtz9G7zUqYFCVUSdJdZnRuUipNsjpzuxKG2TW9sfmWRjl38IGfjIgXLW8WU1h6gubXXjhPEudYXPI5MergVQelw33DfvLXfiXOywy_0lCt_MCQtEwIwOs0djQAYQJs6Fq7fMvf3uT6Y87wVmcAIlZOM94fq-x-4TO1EI_YE"
+    ],
+    "Origin": [
+      "https://localhost:7102"
+    ],
+    "Referer": [
+      "https://localhost:7102/Warehouse/Index"
+    ],
+    "Upgrade-Insecure-Requests": [
+      "1"
+    ],
+    "Content-Length": [
+      "239"
+    ],
+    "sec-ch-ua": [
+      "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\""
+    ],
+    "sec-ch-ua-mobile": [
+      "?0"
+    ],
+    "sec-ch-ua-platform": [
+      "\"Windows\""
+    ],
+    "DNT": [
+      "1"
+    ],
+    "sec-fetch-site": [
+      "same-origin"
+    ],
+    "sec-fetch-mode": [
+      "navigate"
+    ],
+    "sec-fetch-user": [
+      "?1"
+    ],
+    "sec-fetch-dest": [
+      "document"
+    ]
+  }
+}
+-------------------------------------------------
+

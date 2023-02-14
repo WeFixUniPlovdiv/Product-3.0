@@ -1,0 +1,10 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/ServerLangs_1701261030/FileContentIndex
+.DS_Store
+.vs
+Warehouse.Manager/appsettings.json
+Warehouse.Manager/bin
+Warehouse.Manager/obj
