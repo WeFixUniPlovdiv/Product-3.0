@@ -1,11 +1,11 @@
-CREATE OR ALTER PROCEDURE wh.SP_DeleteProduct
+CREATE OR ALTER PROCEDURE dbo.SP_DeleteProduct
     @pID INT
 AS
 BEGIN
-    IF NOT EXISTS (SELECT TOP 1 [Id] FROM [wh].[T_Products] WHERE [Id] = @pID)
+    IF NOT EXISTS (SELECT TOP 1 [Id] FROM [dbo].[T_Products] WHERE [Id] = @pID)
         RETURN 1;
     BEGIN TRY
-        DELETE FROM [wh].[T_Products] WHERE [Id] = @pID;
+        DELETE FROM [dbo].[T_Products] WHERE [Id] = @pID;
     END TRY
     BEGIN CATCH
         DECLARE 

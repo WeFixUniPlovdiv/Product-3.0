@@ -1,4 +1,4 @@
-CREATE OR ALTER PROCEDURE [wh].[SP_CreateUser]
+CREATE OR ALTER PROCEDURE [dbo].[SP_CreateUser]
     @Username NVARCHAR(15),
     @Password NVARCHAR(20),
     @Email NVARCHAR(320),
@@ -9,11 +9,11 @@ BEGIN
     DECLARE @salt UNIQUEIDENTIFIER = NEWID()
     DECLARE @passed INT;
 
-    IF (SELECT TOP 1 [uID] FROM [wh].[Users] WHERE [uUsername] = @Username) IS NOT NULL RETURN 1;
-    IF (SELECT TOP 1 [uID] FROM [wh].[Users] WHERE LOWER([uEmail]) = LOWER(@Email)) IS NOT NULL RETURN 2;
+    IF (SELECT TOP 1 [uID] FROM [dbo].[Users] WHERE [uUsername] = @Username) IS NOT NULL RETURN 1;
+    IF (SELECT TOP 1 [uID] FROM [dbo].[Users] WHERE LOWER([uEmail]) = LOWER(@Email)) IS NOT NULL RETURN 2;
 
     BEGIN TRY
-        INSERT INTO [wh].[Users]
+        INSERT INTO [dbo].[Users]
             ([uUsername], [uPasswordHash], [uPwdSalt], [uEmail], [uPhone])
         VALUES
             (@Username, HASHBYTES('SHA2_512', @Password+CAST(@salt AS NVARCHAR(36))), @salt, @Email,@Phone)

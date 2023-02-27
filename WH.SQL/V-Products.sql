@@ -1,4 +1,4 @@
-Create or ALTER VIEW [wh].[V_Products] AS
+Create or ALTER VIEW [dbo].[V_Products] AS
     SELECT 
         p.[Id] as pID,
         t.[Name] as pType,
@@ -8,5 +8,5 @@ Create or ALTER VIEW [wh].[V_Products] AS
         p.[BoughtPrice] as pBPrice,
         p.[SellPrice] as pSPrice,
         p.[Amount] as pAmount
-    FROM [wh].[T_Products] p
-    INNER JOIN [wh].[T_ProductTypes] t ON t.Id = p.TypeId
+    FROM [dbo].[T_Products] p
+    INNER JOIN [dbo].[T_ProductTypes] t ON t.Id = p.TypeId

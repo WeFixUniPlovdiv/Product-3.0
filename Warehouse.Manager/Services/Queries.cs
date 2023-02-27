@@ -1,6 +1,4 @@
-﻿using Warehouse.Manager.Utils;
-
-namespace Warehouse.Manager.Services
+﻿namespace Warehouse.Manager.Services
 {
   static class Queries
   {
@@ -30,22 +28,22 @@ namespace Warehouse.Manager.Services
     }
     public static class SP
     {
-      public const string LOGIN = $"{AppConstants.DB_SHEMA}.SP_LoginVerify";
-      public const string CREATEUSER = $"{AppConstants.DB_SHEMA}.SP_CreateUser";
-      public const string ADD_PRODUCT_TYPE = $"{AppConstants.DB_SHEMA}.SP_AddProductType";
-      public const string ADD_PRODUCT = $"{AppConstants.DB_SHEMA}.SP_AddProduct";
-      public const string UPDATE_PRODUCT = $"{AppConstants.DB_SHEMA}.SP_UpdateProduct";
-      public const string DELETE_PRODUCT = $"{AppConstants.DB_SHEMA}.SP_DeleteProduct";
+      public const string LOGIN = "SP_LoginVerify";
+      public const string CREATEUSER = "SP_CreateUser";
+      public const string ADD_PRODUCT_TYPE = "SP_AddProductType";
+      public const string ADD_PRODUCT = "SP_AddProduct";
+      public const string UPDATE_PRODUCT = "SP_UpdateProduct";
+      public const string DELETE_PRODUCT = "SP_DeleteProduct";
     }
 
     public static class Table
     {
-      public const string USERS = $"{AppConstants.DB_SHEMA}.Users";
-      public const string PRODUCT_TYPES = $"{AppConstants.DB_SHEMA}.T_ProductTypes";
+      public const string USERS = "Users";
+      public const string PRODUCT_TYPES = "T_ProductTypes";
     }
     public static class View
     {
-      public const string PRODUCTS = $"{AppConstants.DB_SHEMA}.V_Products";
+      public const string PRODUCTS = "V_Products";
     }
     public static class Prms
     {

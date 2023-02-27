@@ -1,11 +1,11 @@
-CREATE OR ALTER PROCEDURE [wh].[SP_AddProductType]
+CREATE OR ALTER PROCEDURE [dbo].[SP_AddProductType]
     @Name NVARCHAR(255)
 AS
 BEGIN
-    IF EXISTS (SELECT TOP 1 [Id] FROM [wh].[T_ProductTypes] WHERE [Name] LIKE @Name)
+    IF EXISTS (SELECT TOP 1 [Id] FROM [dbo].[T_ProductTypes] WHERE [Name] LIKE @Name)
             RETURN 1;
     BEGIN TRY
-        INSERT INTO [wh].[T_ProductTypes] ([Name]) VALUES (@Name);
+        INSERT INTO [dbo].[T_ProductTypes] ([Name]) VALUES (@Name);
     END TRY
     BEGIN CATCH
         DECLARE 

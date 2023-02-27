@@ -1,8 +1,6 @@
 ﻿using System.Security.Claims;
-using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Warehouse.Manager.Models;
-using static Warehouse.Manager.Services.Queries.Prms;
 
 namespace Warehouse.Manager.Services
 {

@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace Warehouse.Manager.Utils
+﻿namespace Warehouse.Manager.Utils
 {
     public class DbConnectionSettings
     {

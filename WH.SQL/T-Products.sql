@@ -1,7 +1,7 @@
-IF OBJECT_ID('[wh].[T_Products]', 'U') IS NOT NULL
-DROP TABLE [wh].[T_Products]
+IF OBJECT_ID('[dbo].[T_Products]', 'U') IS NOT NULL
+DROP TABLE [dbo].[T_Products]
 GO
-CREATE TABLE [wh].[T_Products]
+CREATE TABLE [dbo].[T_Products]
 (
     [Id] INT IDENTITY(1,1) NOT NULL,
     [TypeId] INT NOT NULL,
@@ -12,5 +12,5 @@ CREATE TABLE [wh].[T_Products]
     [SellPrice] FLOAT NOT NULL,
     [Amount] INT NOT NULL
     PRIMARY KEY (Id),
-    FOREIGN KEY (TypeId) REFERENCES wh.T_ProductTypes(Id)
+    FOREIGN KEY (TypeId) REFERENCES dbo.T_ProductTypes(Id)
 );

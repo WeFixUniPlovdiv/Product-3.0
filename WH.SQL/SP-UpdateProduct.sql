@@ -1,4 +1,4 @@
-CREATE OR ALTER PROCEDURE wh.SP_UpdateProduct
+CREATE OR ALTER PROCEDURE dbo.SP_UpdateProduct
     @pID INT,
     @pTypeId INT = NULL,
     @pName NVARCHAR(50) = NULL,
@@ -14,9 +14,9 @@ DECLARE
             pBPrice FLOAT, pSPrice FLOAT, pAmount INT)
 BEGIN
 --SET ANSI_WARNINGS OFF;
-    IF EXISTS (SELECT TOP 1 [Id] FROM [wh].[T_Products] WHERE [Id] = @pID)
+    IF EXISTS (SELECT TOP 1 [Id] FROM [dbo].[T_Products] WHERE [Id] = @pID)
     BEGIN
-        INSERT INTO @Prod SELECT * FROM [wh].[T_Products] WHERE [Id] = @pID;
+        INSERT INTO @Prod SELECT * FROM [dbo].[T_Products] WHERE [Id] = @pID;
     END
     BEGIN TRY
         IF (@pTypeId IS NOT NULL AND (SELECT pTypeId FROM @Prod) <> @pTypeId)
@@ -33,7 +33,7 @@ BEGIN
             UPDATE @Prod SET pSPrice = @pSellPrice;
         IF (@pAmount IS NOT NULL AND (SELECT pAmount FROM @Prod) <> @pAmount)
             UPDATE @Prod SET pAmount = @pAmount;
-        UPDATE [wh].[T_Products]
+        UPDATE [dbo].[T_Products]
            SET [TypeId] = (SELECT pTypeId FROM @Prod),
                [Name] = (SELECT pName FROM @Prod),
                [Description] = (SELECT pDesc FROM @Prod),
